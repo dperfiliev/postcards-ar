@@ -1,0 +1,10 @@
+{
+  "marker1": {
+    "model": "/models/cake/scene.gltf",
+    "patt": "/patterns/1.patt"
+  },
+  "marker2": {
+    "model": "/models/flower/scene.gltf",
+    "patt": "/patterns/2.patt"
+  }
+}
