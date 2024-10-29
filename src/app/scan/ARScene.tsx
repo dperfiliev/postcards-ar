@@ -95,7 +95,7 @@ const ARScene = () => {
 
         {/* Камера с настройками дальности и ближности camera="far:100000; near:0.01" */}
 
-        <a-marker-camera></a-marker-camera>
+        <a-marker-camera camera="fov: 80"></a-marker-camera>
 
         {Object.entries(models).map(([key, { model, patt }]) => (
           <a-marker key={key} preset="custom" type="pattern" url={patt}>
