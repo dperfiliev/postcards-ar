@@ -1,0 +1,31 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    flex-grow: 1;
+    gap: 40px;
+
+    padding-right: 20px;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    scrollbar-color: #ffffff;
+    scrollbar-track-color: #635d5d;
+}
+
+.info::-webkit-scrollbar {
+    background-color: #ffffff; /* Цвет ползунка прокрутки */
+    border-radius: 10px;
+    width: 10px; /* Ширина полосы прокрутки */
+}
+
+.info::-webkit-scrollbar-thumb {
+    background-color:#635d5d; /* Цвет ползунка прокрутки */
+    border-radius: 10px; /* Скругление */
+}

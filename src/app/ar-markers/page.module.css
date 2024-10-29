@@ -1,0 +1,194 @@
+.blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.wrappers {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.giftImg {
+    width: 100%;
+    height: 90%;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.choose {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 50px;
+    background: none;
+    padding-left: 20px;
+}
+
+.listWrapper{
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    flex-grow: 1;
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: rgba(81, 81, 81, 0.731);
+    border-radius: 20px;
+}
+
+.iconWrapper {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    padding: 5px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+@media (max-width: 1400px){
+    .giftImg {
+        border: 3px solid white;
+    }
+    
+    .input {
+        border: 3px solid white;
+    }
+
+    .listWrapper{
+        border: 3px solid white;
+    }
+
+    .iconWrapper {
+        border: 3px solid white;
+    }
+
+    .blocks {
+        gap: 10px;
+    }
+
+    .choose {
+        gap: 10px;
+    }
+    
+    .panel {
+        gap: 10px;
+    }
+
+    .input {
+        padding-left: 10px;
+    }
+
+    .listWrapper{
+        padding: 20px;
+    }
+    
+    .list {
+        gap: 10px;
+    }
+    
+    .item {
+        gap: 10px;
+    }
+
+    .iconWrapper {
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .blocks {
+        height: 90%;
+    }
+    
+    .gift {
+        height: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .blocks {
+        height: 100%;
+    }
+    .wrappers {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .gift {
+        height: 60%;
+    }
+    .textScroll {
+        overflow-y: scroll;
+    }
+    .choose {
+        height: 40%;
+    }
+    .listWrapper{
+        padding: 10px;
+    }
+    .list {
+        flex-basis: 100px;
+    }
+}
+

@@ -1,5 +1,6 @@
+// src/types/global.d.ts
+
 declare module 'aframe' {
-    export = AFRAME;
-    const AFRAME: any;
-  }
-  
+  const AFRAME: any;
+  export default AFRAME;
+}

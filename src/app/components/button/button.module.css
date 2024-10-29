@@ -1,0 +1,56 @@
+.button {
+    padding: 12px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttonHF {
+    padding: 12px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.img {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .buttonHF {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonHF span{
+        display: none;
+    }
+
+    .img {
+        display: inline-block;
+        border-radius: 50%;
+        object-fit: contain;
+        padding: 5px;
+    }
+}
