@@ -105,6 +105,12 @@
 }
 
 @media (max-width: 1400px){
+    .blocks {
+        gap: 10px;
+    }
+    .wrappers {
+        gap: 10px;
+    }
     .giftImg {
         border: 3px solid white;
     }
@@ -120,11 +126,6 @@
     .iconWrapper {
         border: 3px solid white;
     }
-
-    .blocks {
-        gap: 10px;
-    }
-
     .choose {
         gap: 10px;
     }

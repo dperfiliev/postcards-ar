@@ -1,7 +1,7 @@
 .section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     text-align: justify;
 }
 
@@ -28,4 +28,11 @@
 .info::-webkit-scrollbar-thumb {
     background-color:#635d5d; /* Цвет ползунка прокрутки */
     border-radius: 10px; /* Скругление */
+}
+
+@media (max-width: 1400px){
+    .section{
+        gap: 10px;
+    }
+    
 }
