@@ -34,9 +34,12 @@
         background-color: #0CFFD6;
         transform: rotate(90deg);
     }
+    50% {
+        background-color: #5821A6;
+    }
     75% {
-        left: -10%;
-        bottom: -10%;
+        left: -15%;
+        bottom: -15%;
         background-color: #D91480;
         transform: rotate(-90deg);
     }

@@ -7,16 +7,8 @@ export default function Header(){
         <div className={styles.header}>
             <span className="text-logotype">AR-postcards</span>
             <div className={styles.nav}>
-                <Button text="Помощь"/>
-                <Button text="О Сервисе"/>
-            </div>
-            <div className={styles.mobile}> 
-            <button className={styles.button}>
-                    <Image className={styles.img} src="/images/icons/telegram.svg" alt="" fill />
-                </button>
-                <button className={styles.button}>
-                    <Image className={styles.img} src="/images/icons/telegram.svg" alt="" fill />
-                </button>
+                <Button isScalable={true} text="Помощь" imgSrc="/images/icons/telegram.svg"/>
+                <Button isScalable={true} text="О Сервисе" imgSrc="/images/icons/telegram.svg"/>
             </div>
         </div>
     )

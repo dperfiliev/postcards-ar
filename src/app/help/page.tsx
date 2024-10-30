@@ -7,6 +7,14 @@ import Footer from "../components/footer/footer"
 export default function Help() {
     return (
         <div className="pagedesign">
+            <div className="gradients">
+                <div className='pink_1'> </div>
+                <div className='pink_2'></div>
+                <div className='purple_1'></div>
+                <div className='purple_2'></div>
+                <div className='cyan_1'></div>
+                <div className='cyan_2'></div>
+            </div>
             <Header />
             <div className="content">
 

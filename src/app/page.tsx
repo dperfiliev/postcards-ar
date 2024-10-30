@@ -24,7 +24,6 @@ export default function Home() {
         <div className='purple_2'></div>
         <div className='cyan_1'></div>
         <div className='cyan_2'></div>
-
       </div>
 
       <Header />
@@ -40,7 +39,7 @@ export default function Home() {
         <div className={styles.scan}>
           <ButtonScan src="./images/icons/telegram.svg" />
 
-          
+
           <p className='text-caption'>
             Нажмите, <br /> чтобы отсканировать
           </p>
