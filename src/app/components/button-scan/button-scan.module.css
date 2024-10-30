@@ -22,7 +22,7 @@
 
     border-radius: 50%;
     background-color: #D91480;
-    filter: blur(calc(1vw + 1vh));
+    filter: blur(calc(2vw + 2vh));
 
     animation: around 10s infinite ease;
 }
