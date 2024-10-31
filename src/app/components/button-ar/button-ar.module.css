@@ -1,6 +1,6 @@
 .button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     border-radius: 10px;
     background-color: white;
@@ -18,23 +18,9 @@
     object-fit: contain; 
 }
 
-@media (max-width: 1400px) {
-    .button {
-        width: 40px; 
-        height: 40px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .button {
-        width: 70px; 
-        height: 70px; 
-    }
-}
-
 @media (max-width: 576px) {
     .button {
-        width: 40px; 
-        height: 40px; 
+        width: 30px; 
+        height: 30px; 
     }
 }
