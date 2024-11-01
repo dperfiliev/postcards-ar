@@ -22,11 +22,19 @@
     height: 100%;
 }
 
-.giftImg {
+.giftModel {
+    position: relative;
     width: 100%;
     height: 90%;
     border: 5px solid white;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftImg {
+    position: absolute;
 }
 
 .choose {
@@ -43,23 +51,53 @@
     gap: 20px;
 }
 
-.input {
-    width: 100%;
-    height: 100%;
+.inputField{
+    height: 40px;
     border: 5px solid white;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    height: 100%;
+    width: 100%;
+    border: none;
     background: none;
     padding-left: 20px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.inputState {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.inputIcon {
+    padding: 5px;
+    object-fit: contain;
+    position: absolute;
+}
+
+.cancel {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .listWrapper{
     width: 100%;
-    height: 100%;
     border: 5px solid white;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     padding: 40px;
+    flex-grow: 1;
 }
 
 .list {
@@ -111,11 +149,11 @@
     .wrappers {
         gap: 10px;
     }
-    .giftImg {
+    .giftModel {
         border: 3px solid white;
     }
     
-    .input {
+    .inputField {
         border: 3px solid white;
     }
 
@@ -172,23 +210,29 @@
     .blocks {
         height: 100%;
     }
+
     .wrappers {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
+
     .gift {
-        height: 60%;
+        height: 50%;
     }
+
     .textScroll {
         overflow-y: scroll;
     }
+
     .choose {
-        height: 40%;
+        height: 50%;
     }
+
     .listWrapper{
         padding: 10px;
     }
+
     .list {
         flex-basis: 100px;
     }

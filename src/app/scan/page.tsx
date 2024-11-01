@@ -1,7 +1,7 @@
 import styles from "./page.module.css"
 
 import Header from "../components/header/header"
-import ButtonScreen from "../components/button-screen/button-screen"
+
 import Footer from "../components/footer/footer"
 
 import ARScene from "./ARScene"
