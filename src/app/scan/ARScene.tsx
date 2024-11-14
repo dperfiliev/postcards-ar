@@ -37,41 +37,7 @@ const ARScene = () => {
 
     };
 
-
     loadLibraries();
-
-
-    /*
-    const observer = new MutationObserver(() => {
-      const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
-      //const bodyElement = document.querySelector('body') as HTMLElement;
-
-      if (videoElement) {
-        // Устанавливаем нужные стили для видео
-        videoElement.style.position = "absolute";
-        videoElement.style.top = "0";
-        videoElement.style.left = "0";
-        videoElement.style.width = "1000vw";  // Устанавливаем ширину в 100%
-        videoElement.style.height = "100vh"; // Устанавливаем высоту в 100%
-        videoElement.style.zIndex = "0";     // Устанавливаем z-index
-        videoElement.style.objectFit = "contain"; // Контейнер без обрезки
-
-        //bodyElement.style.marginLeft = '0';
-
-        observer.disconnect(); // Отключаем наблюдатель после применения стилей
-      }
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-
-    // Убираем наблюдатель при размонтировании компонента
-    return () => observer.disconnect();
-    */
-
-
 
   }, []);
 
@@ -79,39 +45,37 @@ const ARScene = () => {
     return <div>Loading AR scene...</div>;
   }
 
-
   return (
 
-      <a-scene 
-        vr-mode-ui="enabled: false" // Отключает VR-интерфейс
-        embedded
-        arjs="sourceType: webcam; 
+    <a-scene
+      vr-mode-ui="enabled: false" // Отключает VR-интерфейс
+      embedded
+      arjs="sourceType: webcam; 
       debugUIEnabled: false; detectionMode: mono_and_matrix; 
       matrixCodeType: 4x4; trackingMethod: best;
-      renderer='logarithmicDepthBuffer: true;"
-      >
+      renderer='antialias: true; precision: medium; logarithmicDepthBuffer: true;"
+    >
 
-        <a-light type="hemisphere" intensity="0.75"></a-light>
+      
 
-        {/* Камера с настройками дальности и ближности camera="far:100000; near:0.01" */}
 
-        <a-marker-camera camera="fov: 80"></a-marker-camera>
+      <a-marker-camera position="0 0 0" rotation="0 0 0"></a-marker-camera>
 
-        {Object.entries(models).map(([key, { model, patt }]) => (
-          <a-marker key={key} preset="custom" type="pattern" url={patt}>
-            <a-entity
-              gltf-model={model}
-              scale="0.5 0.5 0.5"
-              position="0 0 0"
-              rotation="0 90 0"
-            ></a-entity>
-          </a-marker>
-        ))}
-        <a-entity camera></a-entity>
+      {Object.entries(models).map(([key, { model, patt }]) => (
+        <a-marker key={key} preset="custom" type="pattern" url={patt}>
+          <a-entity
+            gltf-model={model}
+            scale="0.5 0.5 0.5"
+            position="0 0 0"
+            rotation="0 90 0"
+          ></a-entity>
+        </a-marker>
+      ))}
 
-      </a-scene>
 
-        
+    </a-scene>
+
+
 
 
   );
@@ -119,8 +83,3 @@ const ARScene = () => {
 
 export default ARScene;
 
-{/*
-        <div className={styles.panel}>
-        <Button text="hello"/>
-        </div>
-        */}

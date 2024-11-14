@@ -33,7 +33,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images/icons/ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -50,7 +50,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images/icons/ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -67,7 +67,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images/icons/ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -84,7 +84,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images/icons/ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -116,7 +116,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images//ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -133,7 +133,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images/icons/ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -150,7 +150,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images//ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">
@@ -167,7 +167,7 @@ export default function Help() {
                             <div className={styles.cardWrapper}>
                                 <div className={styles.card}>
                                     <div className={styles.item}>
-                                        <Image className={styles.img} src="./images/icons/telegram.svg" alt="" fill />
+                                        <Image className={styles.img} src="./images//ui/telegram.svg" alt="" fill />
                                     </div>
                                     <div className={styles.number}>
                                         <p className="number">

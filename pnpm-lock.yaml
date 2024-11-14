@@ -32,6 +32,9 @@ importers:
       three:
         specifier: 0.169.0
         version: 0.169.0
+      three-stdlib:
+        specifier: ^2.34.0
+        version: 2.34.0(three@0.169.0)
     devDependencies:
       '@types/aframe':
         specifier: ^1.2.7
@@ -45,6 +48,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.3.0
+      '@types/three':
+        specifier: ^0.169.0
+        version: 0.169.0
       typescript:
         specifier: ^5
         version: 5.6.3

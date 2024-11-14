@@ -11,13 +11,13 @@ import Button from "../components/button/button"
 export default function Scan() {
     return (
 
-                <div className={styles.scan}>
-                    <ARScene />
-                    <div className={styles.panel}>
-                    <Button text="Главная"/>
-                    <Button text="Снимок"/>
-                    </div>
-                </div>
+        <div className={styles.scan}>
+            <ARScene />
+            <div className={styles.panel}>
+                <Button text="Главная" />
+                <Button text="Снимок" />
+            </div>
+        </div>
     )
 }
 //style={{ width: '100vw', height: '100vh', margin: 0 }}

@@ -10,6 +10,10 @@ body {
   font-family: var(--montserrat);
 }
 
+a {
+  text-decoration: none;
+}
+
 .pagedesign {
   position: relative;
 
@@ -22,8 +26,6 @@ body {
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-
-
 }
 
 .gradients {

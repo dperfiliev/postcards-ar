@@ -12,8 +12,9 @@ import ButtonAR from './components/button-ar/button-ar';
 import Footer from './components/footer/footer';
 
 
+export default async function Home() {
 
-export default function Home() {
+  
   return (
     <div className="pagedesign">
 
@@ -37,7 +38,7 @@ export default function Home() {
           </h2>
         </div>
         <div className={styles.scan}>
-          <ButtonScan src="./images/icons/telegram.svg" />
+          <ButtonScan src="./images/icons/ui/scan.svg" href='/scan'/>
 
 
           <p className='text-caption'>
@@ -48,7 +49,7 @@ export default function Home() {
           </h3>
         </div>
         <div className={styles.ar}>
-          <ButtonAR src="./images/icons/telegram.svg" />
+          <ButtonAR src="./images/icons/ui/gift.svg" href='/ar-markers'/>
           <p className='text-caption'>
             Нажмите, чтобы <br /> выбрать открытку
           </p>
