@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <Head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta />
       </Head>
       <body className={`${montserrat.className} ${montserrat.variable}`}>
 

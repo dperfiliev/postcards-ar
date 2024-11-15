@@ -48,18 +48,9 @@ const ARScene = () => {
   return (
 
     <a-scene
-      vr-mode-ui="enabled: false" // Отключает VR-интерфейс
-      embedded
-      arjs="sourceType: webcam; 
-      debugUIEnabled: false; detectionMode: mono_and_matrix; 
-      matrixCodeType: 4x4; trackingMethod: best;
-      renderer='antialias: true; precision: medium; logarithmicDepthBuffer: true;"
+      
     >
 
-      
-
-
-      <a-marker-camera position="0 0 0" rotation="0 0 0"></a-marker-camera>
 
       {Object.entries(models).map(([key, { model, patt }]) => (
         <a-marker key={key} preset="custom" type="pattern" url={patt}>
@@ -72,11 +63,10 @@ const ARScene = () => {
         </a-marker>
       ))}
 
+    <a-entity camera></a-entity>
+
 
     </a-scene>
-
-
-
 
   );
 };
