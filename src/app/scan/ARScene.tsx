@@ -46,24 +46,20 @@ const ARScene = () => {
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  const scale = isMobile ? "2 1 2" : "1 1 1";
+  const scale = isMobile ? "2 0.8 2" : "1 1 1";
 
   return (
 
     
     <a-scene arjs="sourceType: webcam;" 
     renderer="logarithmicDepthBuffer: true;"
-
+   
     inspector="" 
     keyboard-shortcuts="" 
     screenshot="" 
     vr-mode-ui="enabled: false" 
     device-orientation-permission-ui=""
     >
-
- 
-    
-
 
       {Object.entries(models).map(([key, { model, patt }]) => (
         <a-marker key={key} preset="custom" type="pattern" url={patt}>
@@ -78,7 +74,7 @@ const ARScene = () => {
         </a-marker>
       ))}
 
-    <a-entity camera="fov: 75; position: 0 1.6 0;"></a-entity>
+    <a-entity camera="fov: 50; position: 0 5 0;"></a-entity>
 
 
     </a-scene>
