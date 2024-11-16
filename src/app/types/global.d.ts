@@ -9,7 +9,10 @@ declare namespace JSX {
       'a-light' : any;
       'a-video': any;
       'a-box': any;
+      'a-assets': any;
+      'a-asset-item': any;
       'a-marker-camera' : any;
+      'a-nft' : any;
       // Другие элементы A-Frame можно добавлять по мере необходимости
     }
   }

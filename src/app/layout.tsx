@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import Head from "next/head";
+import Script from "next/script";
 
 import { Montserrat } from "next/font/google"
 
@@ -23,9 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <Head>
-        <meta />
-      </Head>
+    
+      <Script src="https://aframe.io/releases/1.0.4/aframe.min.js"></Script>
+      <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
+      <Script src="./scripts/gesture-detector.js"></Script>
+      <Script src="./scripts/gesture-handler.js"></Script>
       <body className={`${montserrat.className} ${montserrat.variable}`}>
 
         {children}

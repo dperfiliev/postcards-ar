@@ -7,6 +7,9 @@ import { useEffect, useState, useRef } from "react";
 
 import Button from "../components/button/button";
 
+import Head from "next/head";
+import Script from "next/script";
+
 interface ModelsData {
   [key: string]: {
     model: string;
@@ -21,8 +24,8 @@ const ARScene = () => {
     const loadLibraries = async () => {
       try {
         // Импортируем A-Frame и AR.js внутри useEffect
-        await import("aframe");
-        await import("@ar-js-org/ar.js/aframe/build/aframe-ar.js");
+        //await import("aframe");
+        //await import("@ar-js-org/ar.js/aframe/build/aframe-ar.js");
 
         console.log("A-Frame и AR.js загружены");
 
@@ -44,32 +47,45 @@ const ARScene = () => {
     return <div>Loading AR scene...</div>;
   }
 
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  const scale = isMobile ? "2 0.8 2" : "1 1 1";
 
   return (
-
     
+    <>
+
+<meta
+          aframe-injected=""
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover"
+        />
+
     <a-scene arjs="sourceType: webcam;" 
+    embedded
     renderer="logarithmicDepthBuffer: true;"
-   
     inspector="" 
     keyboard-shortcuts="" 
     screenshot="" 
     vr-mode-ui="enabled: false" 
     device-orientation-permission-ui=""
+    gesture-detector
     >
 
       {Object.entries(models).map(([key, { model, patt }]) => (
-        <a-marker key={key} preset="custom" type="pattern" url={patt}>
-          
+        <a-marker key={key} preset="custom" type="pattern" url={patt}
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        >
           <a-entity
             gltf-model={model}
-            scale={scale}
+            scale="1 1 1"
             position="0 0 0"
             rotation="0 0 0"
-            
+            gesture-handler="minScale: 0.25; maxScale: 10"
           ></a-entity>
         </a-marker>
       ))}
@@ -78,7 +94,7 @@ const ARScene = () => {
 
 
     </a-scene>
-
+</>
   );
 };
 

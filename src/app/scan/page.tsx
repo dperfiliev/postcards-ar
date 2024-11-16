@@ -13,9 +13,10 @@ import Button from "../components/button/button"
 import { useEffect } from "react"
 
 import Head from "next/head"
-import { div } from "three/webgpu"
+
 
 export default function Scan() {
+
 
     return (
 
