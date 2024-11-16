@@ -34,7 +34,6 @@ const ARScene = () => {
         console.error("Error loading libraries or fetching models:", error);
       }
 
-
     };
 
     loadLibraries();
@@ -47,14 +46,19 @@ const ARScene = () => {
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  const scale = isMobile ? "1 0.5 1" : "1 1 1";
+  const scale = isMobile ? "2 1 2" : "1 1 1";
 
   return (
 
     
-    <a-scene arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
-    inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""
-    className={styles.scenez}
+    <a-scene arjs="sourceType: webcam;" 
+    renderer="logarithmicDepthBuffer: true;"
+
+    inspector="" 
+    keyboard-shortcuts="" 
+    screenshot="" 
+    vr-mode-ui="enabled: false" 
+    device-orientation-permission-ui=""
     >
 
  
@@ -63,17 +67,18 @@ const ARScene = () => {
 
       {Object.entries(models).map(([key, { model, patt }]) => (
         <a-marker key={key} preset="custom" type="pattern" url={patt}>
+          
           <a-entity
             gltf-model={model}
             scale={scale}
             position="0 0 0"
             rotation="0 0 0"
-            adjust-scale-on-resize
+            
           ></a-entity>
         </a-marker>
       ))}
 
-    <a-entity camera="fov: 35; position: 0 1.6 0;"></a-entity>
+    <a-entity camera="fov: 75; position: 0 1.6 0;"></a-entity>
 
 
     </a-scene>

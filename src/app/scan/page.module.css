@@ -22,9 +22,3 @@
     display: flex;
     justify-content: flex-end;
 }
-
-.scene {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9; /* Установите 16:9 или 4:3 */
-  }
