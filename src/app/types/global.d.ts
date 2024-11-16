@@ -8,6 +8,7 @@ declare namespace JSX {
       'a-camera': any;
       'a-light' : any;
       'a-video': any;
+      'a-box': any;
       'a-marker-camera' : any;
       // Другие элементы A-Frame можно добавлять по мере необходимости
     }

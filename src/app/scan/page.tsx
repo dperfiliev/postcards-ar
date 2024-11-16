@@ -17,21 +17,10 @@ import { div } from "three/webgpu"
 
 export default function Scan() {
 
-    useEffect(() => {
-        console.log("RES:", document.querySelector('meta[name="viewport"]'));
-      }, []);
-
     return (
 
         <>
-          {/*
-          <Head>
-        <meta 
-          name="viewport" 
-          content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui, viewport-fit=cover" 
-        />
-      </Head>
-          */}
+
 
       <div className={styles.scan}>
             <ARScene />
@@ -46,4 +35,3 @@ export default function Scan() {
         
     )
 }
-//style={{ width: '100vw', height: '100vh', margin: 0 }}

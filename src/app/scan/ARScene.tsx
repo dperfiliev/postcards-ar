@@ -45,25 +45,35 @@ const ARScene = () => {
     return <div>Loading AR scene...</div>;
   }
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const scale = isMobile ? "1 0.5 1" : "1 1 1";
+
   return (
 
-    <a-scene
-      
+    
+    <a-scene arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
+    inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""
+    className={styles.scenez}
     >
+
+ 
+    
 
 
       {Object.entries(models).map(([key, { model, patt }]) => (
         <a-marker key={key} preset="custom" type="pattern" url={patt}>
           <a-entity
             gltf-model={model}
-            scale="0.5 0.5 0.5"
+            scale={scale}
             position="0 0 0"
-            rotation="0 90 0"
+            rotation="0 0 0"
+            adjust-scale-on-resize
           ></a-entity>
         </a-marker>
       ))}
 
-    <a-entity camera></a-entity>
+    <a-entity camera="fov: 35; position: 0 1.6 0;"></a-entity>
 
 
     </a-scene>
@@ -73,3 +83,15 @@ const ARScene = () => {
 
 export default ARScene;
 
+
+
+{/*
+  
+  vr-mode-ui="enabled: false" // Отключает VR-интерфейс
+      embedded
+      arjs="sourceType: webcam; 
+      debugUIEnabled: false; detectionMode: mono_and_matrix; 
+      matrixCodeType: 4x4; trackingMethod: best;
+      renderer='antialias: true; precision: medium; logarithmicDepthBuffer: true;"
+
+  */}
