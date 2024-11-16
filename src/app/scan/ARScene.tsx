@@ -50,65 +50,50 @@ const ARScene = () => {
 
 
   return (
-    
+
     <>
 
-<meta
-          aframe-injected=""
-          name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover"
-        />
+      <meta
+        aframe-injected=""
+        name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no,minimal-ui,viewport-fit=cover"
+      />
 
-    <a-scene arjs="sourceType: webcam;" 
-    embedded
-    renderer="logarithmicDepthBuffer: true;"
-    inspector="" 
-    keyboard-shortcuts="" 
-    screenshot="" 
-    vr-mode-ui="enabled: false" 
-    device-orientation-permission-ui=""
-    gesture-detector
-    >
+      <a-scene arjs="sourceType: webcam;"
+        embedded
+        renderer="logarithmicDepthBuffer: true;"
+        inspector=""
+        keyboard-shortcuts=""
+        screenshot=""
+        vr-mode-ui="enabled: false"
+        device-orientation-permission-ui=""
+        gesture-detector
+        
 
-      {Object.entries(models).map(([key, { model, patt }]) => (
-        <a-marker key={key} preset="custom" type="pattern" url={patt}
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        >
-          <a-entity
-            gltf-model={model}
-            scale="1 1 1"
-            position="0 0 0"
-            rotation="0 0 0"
-            gesture-handler="minScale: 0.25; maxScale: 10"
-          ></a-entity>
-        </a-marker>
-      ))}
+      >
 
-    <a-entity camera="fov: 50; position: 0 5 0;"></a-entity>
+        {Object.entries(models).map(([key, { model, patt }]) => (
+          <a-marker key={key} preset="custom" type="pattern" url={patt}
 
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+          >
+            <a-entity
+              gltf-model={model}
+              scale="1 1 1"
+              position="0 0 0"
+              rotation="0 0 0"
+              gesture-handler="minScale: 0.25; maxScale: 10"
+            ></a-entity>
+          </a-marker>
+        ))}
 
-    </a-scene>
-</>
+        <a-entity camera="fov: 50;"></a-entity>
+
+      </a-scene>
+    </>
   );
 };
 
 export default ARScene;
-
-
-
-{/*
-  
-  vr-mode-ui="enabled: false" // Отключает VR-интерфейс
-      embedded
-      arjs="sourceType: webcam; 
-      debugUIEnabled: false; detectionMode: mono_and_matrix; 
-      matrixCodeType: 4x4; trackingMethod: best;
-      renderer='antialias: true; precision: medium; logarithmicDepthBuffer: true;"
-
-  */}

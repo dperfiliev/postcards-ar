@@ -164,5 +164,3 @@ AFRAME.registerComponent("gesture-detector", {
     return numberNames[Math.min(touchCount, 4) - 1];
   }
 });
-
-console.log("SCRIPT CONNECTED")

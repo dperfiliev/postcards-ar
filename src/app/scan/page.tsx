@@ -25,12 +25,12 @@ export default function Scan() {
 
       <div className={styles.scan}>
             <ARScene />
-            {/*
+            
             <div className={styles.panel}>
                 <Button text="Главная" />
                 <Button text="Снимок" />
             </div>
-            */}
+            
         </div>
         </>
         
