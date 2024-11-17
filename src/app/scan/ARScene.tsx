@@ -45,6 +45,13 @@ const ARScene = () => {
         }
         videoElement.pause(); // Останавливаем видео
       }
+      const body = document.body;
+      // Очищаем все inline-стили
+      const styles = body.style;
+      for (let i = styles.length - 1; i >= 0; i--) {
+        const styleName = styles[i];
+        body.style.removeProperty(styleName);
+      }
     };
 
 
