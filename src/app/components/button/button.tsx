@@ -8,10 +8,11 @@ interface ButtonT {
     isScalable?: boolean,
     isRound?: boolean,
     imgSrc?: string,
-    href?: string
+    href?: string,
+    onClick?: () => void
 }
 
-export default function Button({ isRound, isScalable, text, imgSrc, href }: ButtonT) {
+export default function Button({ isRound, isScalable, text, imgSrc, href, onClick }: ButtonT) {
     return (
         isRound && href ? (
             <Link href={href}>
@@ -30,11 +31,21 @@ export default function Button({ isRound, isScalable, text, imgSrc, href }: Butt
                     </button>
                 </Link>
             ) : (
-                <button className={styles.button}>
-                    <span className="text-button">
-                        {text}
-                    </span>
-                </button>
+                href ? (
+                    <Link href={href}>
+                        <button className={styles.button}>
+                            <span className="text-button">
+                                {text}
+                            </span>
+                        </button>
+                    </Link>
+                )
+                    :
+                    <button className={styles.button} onClick={onClick}>
+                        <span className="text-button">
+                            {text}
+                        </span>
+                    </button>
             )
         )
     )
