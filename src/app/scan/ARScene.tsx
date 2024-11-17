@@ -35,15 +35,9 @@ const ARScene = () => {
     loadModels();
 
     const stopVideo = () => {
-      const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
+      const videoElement = document.getElementById("arjs-video");
       if (videoElement) {
-        const stream = videoElement.srcObject as MediaStream;
-        if (stream) {
-          // Останавливаем все треки потока видео
-          stream.getTracks().forEach(track => track.stop());
-          videoElement.srcObject = null; // Отвязываем поток
-        }
-        videoElement.pause(); // Останавливаем видео
+        videoElement.remove(); // Удаляем элемент видео из DOM
       }
       const body = document.body;
       // Очищаем все inline-стили
