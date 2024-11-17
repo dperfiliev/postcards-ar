@@ -34,15 +34,29 @@ const ARScene = () => {
   useEffect(() => {
     loadModels();
 
-    // Мы используем replace, чтобы контролировать навигацию и обновить маршрут
+    const stopVideo = () => {
+      const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
+      if (videoElement) {
+        const stream = videoElement.srcObject as MediaStream;
+        if (stream) {
+          // Останавливаем все треки потока видео
+          stream.getTracks().forEach(track => track.stop());
+          videoElement.srcObject = null; // Отвязываем поток
+        }
+        videoElement.pause(); // Останавливаем видео
+      }
+    };
+
+
+    // Обработчик для кнопки "Назад"
     const handleBackNavigation = () => {
+      stopVideo(); // Останавливаем видео
       window.location.href = "/";  // Принудительное обновление маршрута
     };
 
     // Добавляем обработчик для кнопки "Назад"
     window.addEventListener("popstate", handleBackNavigation);
 
-    
   }, []);
 
   if (!models) {
