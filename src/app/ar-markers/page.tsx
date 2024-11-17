@@ -7,40 +7,33 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Model from "./model";
 
-import Button from "../components/button/button";
-
 export default function ArMarkers() {
-    // Состояние для хранения выбранного элемента и ссылки на модель
-    const [selectedId, setSelectedId] = useState<string | null>(null);
-    const [selectedModelUrl, setSelectedModelUrl] = useState<string | null>(null);
-    const [selectedMarkerUrl, setSelectedMarkerUrl] = useState<string | null>(null);
-    const [searchQuery, setSearchQuery] = useState<string>(""); // состояние для строки поиска
-
-    // Данные списка
     const data = [
         { id: "1", name: "День Рождения", icon: "./images/icons/list/bell.svg", marker: "/images/markers/1.png", model: "./models/cake/scene.glb" },
         { id: "2", name: "Праздник Сердца", icon: "./images/icons/list/heart.svg", marker: "/images/markers/2.png", model: "./models/heart/scene.glb" },
         { id: "3", name: "Цветочный Праздник", icon: "./images/icons/list/flower.svg", marker: "/images/markers/3.png", model: "./models/flower/scene.glb" },
-        { id: "4", name: "Сладкий Праздник", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/flower/scene.glb" },
-        { id: "5", name: "Сладкий Праздник", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/flower/scene.glb" },
-        { id: "6", name: "Сладкий Праздник", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/flower/scene.glb" },
-        { id: "7", name: "Сладкий Праздник", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/flower/scene.glb" },
+        { id: "4", name: "День защитника отечества", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/flower/scene.glb" },
+        { id: "5", name: "День знаний", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/flower/scene.glb" },
+        { id: "6", name: "Международный женский день", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/flower/scene.glb" },
+        { id: "7", name: "День космонавтики", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/flower/scene.glb" },
 
     ];
 
-    // Обработчик для выбора модели
+    const [selectedId, setSelectedId] = useState<string>(data[0]?.id || "");
+    const [selectedModelUrl, setSelectedModelUrl] = useState<string>(data[0]?.model || "");
+    const [selectedMarkerUrl, setSelectedMarkerUrl] = useState<string>(data[0]?.marker || "");
+    const [searchQuery, setSearchQuery] = useState<string>(""); 
+
     const handleModelSelect = (id: string, modelUrl: string, markerUrl: string) => {
-        setSelectedId(id); // Устанавливаем выбранный id
-        setSelectedModelUrl(modelUrl); // Устанавливаем URL выбранной модели
-        setSelectedMarkerUrl(markerUrl); // Устанавливаем URL выбранной модели
+        setSelectedId(id); 
+        setSelectedModelUrl(modelUrl);
+        setSelectedMarkerUrl(markerUrl); 
     };
 
-    // Обработчик для изменения поиска
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchQuery(event.target.value);
     };
 
-    // Фильтрация данных на основе searchQuery
     const filteredData = data.filter(item =>
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -58,11 +51,10 @@ export default function ArMarkers() {
             <Header />
             <div className="content">
                 <div className={styles.blocks}>
-
                     <div className={styles.gift}>
                         <div className={styles.giftModel}>
                             <div className={styles.giftImgWrapper}>
-                                <Image className={styles.giftImg} src={selectedMarkerUrl ?? "/images/markers/rocket.jpg"} alt="" fill></Image>
+                                <Image className={styles.giftImg} src={selectedMarkerUrl ?? "/images/markers/rocket.jpg"} alt="" fill sizes=""></Image>
                             </div>
                             <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/cake/scene.glb'} />
                         </div>
@@ -74,7 +66,6 @@ export default function ArMarkers() {
                             </p>
                         </div>
                     </div>
-
                     <div className={styles.choose}>
                         <div className={styles.inputField}>
                             <input
@@ -87,33 +78,32 @@ export default function ArMarkers() {
                             <div className={styles.inputState}>
                                 <button
                                     className={styles.cancel}
-                                    onClick={() => setSearchQuery("")} // кнопка очистки поиска
+                                    onClick={() => setSearchQuery("")}
                                 >
                                     <Image className={styles.inputIcon} src="/images/icons/ui/close.svg" alt="" fill />
                                 </button>
                             </div>
                         </div>
-
-                        <div className={styles.list}>
                         <div className={styles.listWrapper}>
-                            {filteredData.map((item) => (
-                                <div
-                                    key={item.id}
-                                    className={`${styles.item} ${selectedId === item.id ? styles.active : ''}`}
-                                    onClick={() => handleModelSelect(item.id, item.model, item.marker)}
-                                >
-                                    <div className={styles.iconWrapper}>
-                                        <Image
-                                            className={styles.icon}
-                                            src={item.icon}
-                                            alt=""
-                                            fill
-                                        />
+                            <div className={styles.list}>
+                                {filteredData.map((item) => (
+                                    <div
+                                        key={item.id}
+                                        className={`${styles.item} ${selectedId === item.id ? styles.active : ''}`}
+                                        onClick={() => handleModelSelect(item.id, item.model, item.marker)}
+                                    >
+                                        <div className={styles.iconWrapper}>
+                                            <Image
+                                                className={styles.icon}
+                                                src={item.icon}
+                                                alt=""
+                                                fill
+                                            />
+                                        </div>
+                                        <h3 className="title-3">{item.name}</h3>
                                     </div>
-                                    <h3 className="title-3">{item.name}</h3>
-                                </div>
-                            ))}
-                        </div>
+                                ))}
+                            </div>
                         </div>
 
                     </div>

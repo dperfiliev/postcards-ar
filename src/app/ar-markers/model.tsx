@@ -5,12 +5,10 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 function ModelViewer({ modelPath }: { modelPath: string }) {
     const gltf = useGLTF(modelPath, true); 
 
-    console.log(gltf);
     return <primitive object={gltf.scene} position={[0, -2, 0]} />;
 }
 
 export default function Model({ url }: {url: string}) {
-    //console.log("Model", url);
 
     const modelPath = url;  
 

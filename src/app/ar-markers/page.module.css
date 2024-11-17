@@ -17,17 +17,17 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border: 3px solid white;
+    border: 3px solid var(--primary);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--container);
 }
 
 .giftImgWrapper {
     position: absolute;
-    border: 3px solid white;
+    border: 3px solid var(--primary);
     border-radius: 20px;
     width: 100px;
     height: 100px;
@@ -60,15 +60,15 @@
     gap: 20px;
 }
 
-.inputField{
+.inputField {
     height: 40px;
-    border: 3px solid white;
+    border: 3px solid var(--primary);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--container);
 }
 
 .input {
@@ -88,7 +88,7 @@
 }
 
 .inputIcon {
-    padding: 5px;
+    padding: 10px;
     object-fit: contain;
     position: absolute;
     border: none;
@@ -102,52 +102,67 @@
     cursor: pointer;
 }
 
-.list {
+.listWrapper {
     width: 100%;
-    border: 3px solid white;
+    border: 3px solid var(--primary);
     border-radius: 20px;
-    padding: 40px;
+    padding: 10px;
 
     height: 100px;
     flex-grow: 1;
 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--container);
 }
 
-.listWrapper{
+.list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
- 
+
     height: 100%;
     width: 100%;
 
     overflow-y: scroll;
     overflow-x: hidden;
+
+    scrollbar-width: 3px;
+    scrollbar-color: var(--primary); 
+    scrollbar-track-color: var(--pink);
+
+    padding-right: 10px;
 }
 
+.list::-webkit-scrollbar {
+    background-color: var(--primary); 
+    border-radius: 10px;
+    width: 3px; /* Ширина полосы прокрутки */
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: var(--pink); /* Цвет ползунка прокрутки */
+    border-radius: 3px; /* Скругление */
+}
 
 .item {
     display: flex;
     align-items: center;
+    padding: 10px;
     gap: 20px;
-    cursor: pointer;
 }
 
 .item:hover {
-    background-color: #2d264e;
+    background-color: var(--purple);
     border-radius: 10px;
 }
 
 .active {
-    background-color: #cf39cf;
+    background-color: var(--pink);
     border-radius: 10px;
 }
 
 .iconWrapper {
     width: 50px;
     height: 50px;
-    border: 3px solid white;
+    border: 3px solid var(--primary);
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -162,11 +177,11 @@
     object-fit: contain;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
     .blocks {
         gap: 10px;
     }
-    
+
     .giftImgWrapper {
         width: 80px;
         height: 80px;
@@ -178,21 +193,12 @@
     .choose {
         gap: 10px;
     }
-    
+
     .panel {
         gap: 10px;
     }
 
-    .input {
-        padding-left: 10px;
-    }
-
-    .list{
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    .item {
+    .itemWrapper {
         gap: 10px;
     }
 
@@ -200,14 +206,14 @@
         width: 40px;
         height: 40px;
     }
-    
+
 }
 
 @media (max-width: 768px) {
     .blocks {
         height: 90%;
     }
-    
+
     .gift {
         height: 80%;
     }
@@ -233,10 +239,11 @@
     .choose {
         height: 40%;
     }
-
-    .listWrapper{
-        gap: 10px;
-    }
-
 }
 
+@media (height < 700px) and (width < 400px) {
+    .gift {
+        min-height: 100px;
+        height: 60%;
+    }
+}
