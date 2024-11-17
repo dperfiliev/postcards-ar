@@ -11,39 +11,9 @@
     gap: 20px;
 }
 
-.button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 90px;
-    background-color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.img {
-    padding: 5px;
-    background-color: white;
-    border-radius: 50%;
-    object-fit: contain; 
-}
 
 @media (max-width: 1400px) {
-    .button{
-        width: 30px;
-        height: 30px;
-    }
     .socials{
         gap: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .button {
-        width: 40px;
-        height: 40px;
     }
 }

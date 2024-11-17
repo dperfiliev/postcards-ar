@@ -29,7 +29,7 @@ export default function RootLayout({
    
       <head>
         
-        {/* Скрипты A-Frame и AR.js должны быть в <head> */}
+        
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js" />
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js" />
         <script src="./scripts/gesture-detector.js" />

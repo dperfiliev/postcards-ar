@@ -16,8 +16,3 @@ export default function Footer() {
         </div>
     )
 }
-
-/*
-<ButtonSocials src="/images/icons/telegram.svg" />
-                <ButtonSocials src="/images/icons/telegram.svg" />
-*/
