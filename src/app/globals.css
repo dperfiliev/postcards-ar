@@ -22,7 +22,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   color: var(--primary);
-  font-family: var(--montserrat);
+  font-family: var(--font-montserrat);
 }
 
 a {
@@ -158,12 +158,16 @@ a {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .text-logotype {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 30px;
+}
+
+.text-logotype:hover {
+  text-shadow: 2px 2px 2px var(--pink);;
 }
 
 .title-0 {
@@ -222,8 +226,12 @@ a {
     padding: 20px;
   }
 
+  .content {
+    margin: 40px auto;
+  }
+
   .text-logotype {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .title-0 {
@@ -265,8 +273,9 @@ a {
 }
 
 @media (max-width: 768px) {
+
   .text-logotype {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .title-0 {
@@ -316,7 +325,7 @@ a {
   }
 
   .text-logotype {
-    font-size: 10px;
+    font-size: 22px;
   }
 
   .title-0 {

@@ -7,8 +7,9 @@ import Script from "next/script";
 
 import { Montserrat } from "next/font/google"
 
-const montserrat = Montserrat({
-  weight: ['100', '300', '500'],
+
+const montserrat = Montserrat ({
+  weight: ['100', '300', '500', '700'],
   subsets: ['cyrillic'],
   variable: "--font-montserrat"
 })
@@ -38,7 +39,7 @@ export default function RootLayout({
         
       </head>
     
-      <body className={`${montserrat.className} ${montserrat.variable}`}>
+      <body className={`${montserrat.variable}`}>
 
         {children}
 

@@ -8,8 +8,13 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .blocks {
@@ -72,21 +77,21 @@
     overflow-y: auto;
 
     scrollbar-width: 3px;
-    scrollbar-color: var(--primary); 
+    scrollbar-color: var(--primary);
     scrollbar-track-color: var(--purple);
 
     padding-right: 10px;
 }
 
 .textScroll::-webkit-scrollbar {
-    background-color: var(--primary); 
+    background-color: var(--primary);
     border-radius: 10px;
-    width: 3px; 
+    width: 3px;
 }
 
 .textScroll::-webkit-scrollbar-thumb {
     background-color: var(--purple);
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .choose {
@@ -168,21 +173,21 @@
     overflow-x: hidden;
 
     scrollbar-width: 3px;
-    scrollbar-color: var(--primary); 
+    scrollbar-color: var(--primary);
     scrollbar-track-color: var(--purple);
 
     padding-right: 10px;
 }
 
 .list::-webkit-scrollbar {
-    background-color: var(--primary); 
+    background-color: var(--primary);
     border-radius: 10px;
-    width: 3px; 
+    width: 3px;
 }
 
 .list::-webkit-scrollbar-thumb {
     background-color: var(--purple);
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .item {
@@ -218,7 +223,8 @@
 
 .download {
     margin-left: auto;
-    margin-top: 20px;;
+    margin-top: 20px;
+    ;
 }
 
 @media (max-width: 1400px) {
@@ -252,7 +258,8 @@
     }
 
     .download {
-        margin-top: 10px;;
+        margin-top: 10px;
+        ;
     }
 }
 
@@ -263,21 +270,31 @@
 }
 
 @media (max-width: 576px) {
+
+
     .blocks {
         height: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        flex-grow: 0;
     }
 
+    
     .gift {
-        min-height: 200px;
-        height: 60%;
+        height: 50%;
     }
+    
+    .giftModel {
+        width: 100%;
+        height: 150px;
+    }
+
 
     .choose {
-        height: 40%;
+        height: 50%;
     }
+
 }
 
 /*
