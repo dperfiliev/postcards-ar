@@ -17,7 +17,7 @@ function Loader() {
 function ModelViewer({ modelPath }: { modelPath: string }) {
     const gltf = useGLTF(modelPath, true); 
 
-    return <primitive object={gltf.scene} position={[0, -2, 0]} />;
+    return <primitive object={gltf.scene} position={[0, -1, 0]} />;
 }
 
 export default function Model({ url }: {url: string}) {
@@ -26,7 +26,7 @@ export default function Model({ url }: {url: string}) {
 
     return (
         <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [3, 1, 1], fov: 75 }}>
-            <ambientLight intensity={3} />
+            <ambientLight intensity={4} />
             <pointLight position={[10, 10, 10]}/>
             
             <Suspense fallback={<Loader />}>
