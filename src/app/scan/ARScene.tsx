@@ -34,34 +34,18 @@ const ARScene = () => {
   useEffect(() => {
     loadModels();
 
-   
-    const stopVideo = () => {
-      const videoElement = document.getElementById("arjs-video");
+    const handleBeforeUnload = () => {
+      const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
       if (videoElement) {
-        videoElement.remove(); // Удаляем элемент видео из DOM
+        videoElement.remove();
       }
-      /*
-      const body = document.body;
-      // Очищаем все inline-стили
-      const styles = body.style;
-      for (let i = styles.length - 1; i >= 0; i--) {
-        const styleName = styles[i];
-        body.style.removeProperty(styleName);
-      }
-      */
+
+      document.body.innerHTML = '';
+      window.location.href = "/"; 
     };
 
-
-    // Обработчик для кнопки "Назад"
-    const handleBackNavigation = () => {
-      stopVideo(); // Останавливаем видео
-      window.location.href = "/";  // Принудительное обновление маршрута
-    };
-
-    // Добавляем обработчик для кнопки "Назад"
-    window.addEventListener("popstate", handleBackNavigation);
-   
-
+    window.addEventListener("popstate", handleBeforeUnload);
+    
   }, []);
 
   if (!models) {
