@@ -7,7 +7,16 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Model from "./model";
 
+function Loader() {
+    return <div className={styles.loader}></div>;
+}
+
 export default function ArMarkers() {
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = () => {
+        setIsLoading(false);
+    };
+
     const data = [
         { id: "1", name: "День Рождения", icon: "./images/icons/list/bell.svg", marker: "/images/markers/1.png", model: "./models/cake/scene.glb" },
         { id: "2", name: "Праздник Сердца", icon: "./images/icons/list/heart.svg", marker: "/images/markers/2.png", model: "./models/heart/scene.glb" },
@@ -22,12 +31,12 @@ export default function ArMarkers() {
     const [selectedId, setSelectedId] = useState<string>(data[0]?.id || "");
     const [selectedModelUrl, setSelectedModelUrl] = useState<string>(data[0]?.model || "");
     const [selectedMarkerUrl, setSelectedMarkerUrl] = useState<string>(data[0]?.marker || "");
-    const [searchQuery, setSearchQuery] = useState<string>(""); 
+    const [searchQuery, setSearchQuery] = useState<string>("");
 
     const handleModelSelect = (id: string, modelUrl: string, markerUrl: string) => {
-        setSelectedId(id); 
+        setSelectedId(id);
         setSelectedModelUrl(modelUrl);
-        setSelectedMarkerUrl(markerUrl); 
+        setSelectedMarkerUrl(markerUrl);
     };
 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -54,7 +63,17 @@ export default function ArMarkers() {
                     <div className={styles.gift}>
                         <div className={styles.giftModel}>
                             <div className={styles.giftImgWrapper}>
-                                <Image className={styles.giftImg} src={selectedMarkerUrl ?? "/images/markers/rocket.jpg"} alt="" fill sizes=""></Image>
+
+                                {isLoading && <Loader />}
+                                <Image
+                                    className={styles.giftImg}
+                                    src={selectedMarkerUrl ?? "/images/markers/rocket.jpg"}
+                                    alt=""
+                                    fill
+                                    sizes=""
+                                    onLoad={handleImageLoad}
+                                />
+                                
                             </div>
                             <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/cake/scene.glb'} />
                         </div>

@@ -1,10 +1,10 @@
 .loader {
-    border: 2px solid #f3f3f3;
+    border: 2px solid var(--primary);
     border-radius: 50%;
-    border-top: 2px solid #3498db;
-    width: 30px;
-    height: 30px;
-    animation: spin 50s linear infinite;
+    border-top: 2px solid var(--purple);
+    width: 20px;
+    height: 20px;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
@@ -49,6 +49,10 @@
     z-index: 2;
     bottom: 40px;
     right: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .giftImg {
