@@ -2,17 +2,11 @@
 
 import styles from "./page.module.css"
 
-import Header from "../components/header/header"
-
-import Footer from "../components/footer/footer"
-
 import ARScene from "./ARScene"
 
 import Button from "../components/button/button"
 
-import { useEffect } from "react"
 
-import Head from "next/head"
 import { useRouter } from "next/navigation";
 
 export default function Scan() {

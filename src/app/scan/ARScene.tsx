@@ -1,10 +1,7 @@
 "use client";
 
-import styles from "./ARScene.module.css"
 
 import { useEffect, useState, useRef } from "react";
-
-import Button from "../components/button/button";
 
 
 import { useRouter } from "next/navigation";

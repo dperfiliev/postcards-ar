@@ -13,7 +13,7 @@
 .icon {
     position: absolute;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 30%;
     object-fit: contain;
     padding: 5px;
 }
