@@ -34,6 +34,7 @@ const ARScene = () => {
   useEffect(() => {
     loadModels();
 
+   /*
     const stopVideo = () => {
       const videoElement = document.getElementById("arjs-video");
       if (videoElement) {
@@ -57,6 +58,7 @@ const ARScene = () => {
 
     // Добавляем обработчик для кнопки "Назад"
     window.addEventListener("popstate", handleBackNavigation);
+   */
 
   }, []);
 
