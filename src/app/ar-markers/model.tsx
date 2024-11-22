@@ -1,8 +1,10 @@
-import styles from "./page.module.css"
+import styles from "./page.module.css";
+
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Html } from '@react-three/drei';
+
 
 function Loader() {
     return (
@@ -15,7 +17,7 @@ function Loader() {
 function ModelViewer({ modelPath }: { modelPath: string }) {
     const gltf = useGLTF(modelPath, true); 
 
-    return <primitive object={gltf.scene} position={[0, -1, 0]} />;
+    return <primitive object={gltf.scene} position={[0, -2, 0]} />;
 }
 
 export default function Model({ url }: {url: string}) {

@@ -10,9 +10,9 @@
 }
 
 .loader {
-    border: 2px solid var(--primary);
+    border: 2px solid var(--purple);
     border-radius: 50%;
-    border-top: 2px solid var(--purple);
+    border-top: 2px solid var(--white);
     width: 20px;
     height: 20px;
     animation: spin 5s linear infinite;
@@ -270,7 +270,6 @@
 
     .download {
         margin-top: 10px;
-        ;
     }
 }
 
@@ -296,6 +295,11 @@
 
     .gift {
         height: 50%;
+        gap: 10px;
+    }
+
+    .textBlock {
+        gap: 10px;
     }
 
     .giftModel {
