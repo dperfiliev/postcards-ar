@@ -262,6 +262,6 @@
 
 @media (height < 700px) and (width < 400px) {
     .giftModel {
-        height: 150px;
+        height: 120px;
     }
 }
