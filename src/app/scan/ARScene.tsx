@@ -37,10 +37,11 @@ const ARScene = () => {
       videoElement.pause();
       videoElement.srcObject = null;
       videoElement.remove();
+
+      document.body.innerHTML = '';
     }
 
     // Очистка содержимого <body>
-    document.body.innerHTML = '';
 
     // Перенаправление на главную страницу
     window.location.href = "/";
