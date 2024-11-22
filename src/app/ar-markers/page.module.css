@@ -1,3 +1,17 @@
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 50s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .blocks {
     display: flex;
     gap: 20px;
@@ -126,7 +140,7 @@
 
     scrollbar-width: 3px;
     scrollbar-color: var(--primary); 
-    scrollbar-track-color: var(--pink);
+    scrollbar-track-color: var(--purple);
 
     padding-right: 10px;
 }
@@ -134,12 +148,12 @@
 .list::-webkit-scrollbar {
     background-color: var(--primary); 
     border-radius: 10px;
-    width: 3px; /* Ширина полосы прокрутки */
+    width: 3px; 
 }
 
 .list::-webkit-scrollbar-thumb {
-    background-color: var(--pink); /* Цвет ползунка прокрутки */
-    border-radius: 3px; /* Скругление */
+    background-color: var(--purple);
+    border-radius: 3px; 
 }
 
 .item {
@@ -149,13 +163,9 @@
     gap: 20px;
 }
 
-.item:hover {
-    background-color: var(--purple);
-    border-radius: 10px;
-}
 
 .active {
-    background-color: var(--pink);
+    background-color: var(--purple);
     border-radius: 10px;
 }
 
@@ -242,8 +252,7 @@
 }
 
 @media (height < 700px) and (width < 400px) {
-    .gift {
-        min-height: 100px;
-        height: 60%;
+    .giftModel {
+        height: 150px;
     }
 }

@@ -1,6 +1,16 @@
+import styles from "./page.module.css"
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 
+function Loader() {
+    return (
+        <Html center>
+            <div className={styles.loader}></div>
+        </Html>
+    );
+}
 
 function ModelViewer({ modelPath }: { modelPath: string }) {
     const gltf = useGLTF(modelPath, true); 
@@ -14,10 +24,15 @@ export default function Model({ url }: {url: string}) {
 
     return (
         <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [3, 1, 1], fov: 75 }}>
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
-            <ModelViewer modelPath={modelPath} />
+            <ambientLight intensity={3} />
+            <pointLight position={[10, 10, 10]}/>
+            
+            <Suspense fallback={<Loader />}>
+                <ModelViewer modelPath={modelPath} />
+            </Suspense>
+
             <OrbitControls 
+            enablePan={false}
                 minDistance={2} 
                 maxDistance={5} 
             />

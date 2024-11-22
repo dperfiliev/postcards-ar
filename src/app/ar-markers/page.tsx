@@ -80,7 +80,7 @@ export default function ArMarkers() {
                                     className={styles.cancel}
                                     onClick={() => setSearchQuery("")}
                                 >
-                                    <Image className={styles.inputIcon} src="/images/icons/ui/close.svg" alt="" fill />
+                                    <Image className={styles.inputIcon} src={searchQuery.length == 0 ? "/images/icons/ui/search.svg" : "/images/icons/ui/close.svg"} alt="" fill />
                                 </button>
                             </div>
                         </div>
