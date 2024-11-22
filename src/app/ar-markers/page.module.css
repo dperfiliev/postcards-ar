@@ -1,3 +1,14 @@
+.contentMarkers {
+    margin: 40px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
 .loader {
     border: 2px solid var(--primary);
     border-radius: 50%;
@@ -271,6 +282,9 @@
 
 @media (max-width: 576px) {
 
+    .contentMarkers {
+        margin: 10px auto;
+      }
 
     .blocks {
         height: 100%;
@@ -280,16 +294,14 @@
         flex-grow: 0;
     }
 
-    
     .gift {
         height: 50%;
     }
-    
+
     .giftModel {
         width: 100%;
-        height: 150px;
+        height: 100%;
     }
-
 
     .choose {
         height: 50%;

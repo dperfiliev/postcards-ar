@@ -46,6 +46,33 @@ const ARScene = () => {
 
     window.addEventListener("popstate", handleBeforeUnload);
     
+
+/*
+    const stopVideo = () => {
+      const videoElement = document.getElementById("arjs-video");
+      if (videoElement) {
+        videoElement.remove(); // Удаляем элемент видео из DOM
+      }
+      const body = document.body;
+      // Очищаем все inline-стили
+      const styles = body.style;
+      for (let i = styles.length - 1; i >= 0; i--) {
+        const styleName = styles[i];
+        body.style.removeProperty(styleName);
+      }
+    };
+
+
+    // Обработчик для кнопки "Назад"
+    const handleBackNavigation = () => {
+      stopVideo(); // Останавливаем видео
+      window.location.href = "/";  // Принудительное обновление маршрута
+    };
+
+    // Добавляем обработчик для кнопки "Назад"
+    window.addEventListener("popstate", handleBackNavigation);
+   */
+
   }, []);
 
   if (!models) {

@@ -62,7 +62,7 @@ export default function ArMarkers() {
                 <div className='cyan_2'></div>
             </div>
             <Header />
-            <div className="content">
+            <div className={styles.contentMarkers}>
                 <div className={styles.blocks}>
                     <div className={styles.gift}>
                         <div className={styles.giftModel}>
