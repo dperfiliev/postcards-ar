@@ -311,6 +311,13 @@ a {
 }
 
 @media (max-width: 567px ) {
+  .pagedesign {
+    padding: 10px;
+  }
+
+  .content {
+    margin: 10px auto;
+  }
 
   .text-logotype {
     font-size: 10px;
