@@ -34,12 +34,13 @@ const ARScene = () => {
   useEffect(() => {
     loadModels();
 
-   /*
+   
     const stopVideo = () => {
       const videoElement = document.getElementById("arjs-video");
       if (videoElement) {
         videoElement.remove(); // Удаляем элемент видео из DOM
       }
+      /*
       const body = document.body;
       // Очищаем все inline-стили
       const styles = body.style;
@@ -47,6 +48,7 @@ const ARScene = () => {
         const styleName = styles[i];
         body.style.removeProperty(styleName);
       }
+      */
     };
 
 
@@ -58,7 +60,7 @@ const ARScene = () => {
 
     // Добавляем обработчик для кнопки "Назад"
     window.addEventListener("popstate", handleBackNavigation);
-   */
+   
 
   }, []);
 
