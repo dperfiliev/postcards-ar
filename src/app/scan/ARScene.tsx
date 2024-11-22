@@ -34,17 +34,6 @@ const ARScene = () => {
   useEffect(() => {
     loadModels();
 
-    const handleBeforeUnload = () => {
-      const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
-      if (videoElement) {
-        videoElement.remove();
-      }
-
-      document.body.innerHTML = '';
-      window.location.href = "/"; 
-    };
-
-    window.addEventListener("popstate", handleBeforeUnload);
     
 
 /*
@@ -74,6 +63,20 @@ const ARScene = () => {
    */
 
   }, []);
+
+
+  const handleBeforeUnload = () => {
+    const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.pause();
+      videoElement.remove();
+    }
+
+    document.body.innerHTML = '';
+    window.location.href = "/"; 
+  };
+
+  window.addEventListener("popstate", handleBeforeUnload);
 
   if (!models) {
     return <div>Loading AR scene...</div>;
