@@ -31,12 +31,28 @@ const ARScene = () => {
     }
   };
 
+  const cleanUpARScene = () => {
+    const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.pause();
+      videoElement.srcObject = null;
+      videoElement.remove();
+    }
+
+    // Очистка содержимого <body>
+    document.body.innerHTML = '';
+
+    // Перенаправление на главную страницу
+    window.location.href = "/";
+  };
+
   useEffect(() => {
-    loadModels();
+    loadModels()
 
-    
+    window.addEventListener("popstate",cleanUpARScene);
+  }, []);
 
-/*
+  /*
     const stopVideo = () => {
       const videoElement = document.getElementById("arjs-video");
       if (videoElement) {
@@ -61,22 +77,6 @@ const ARScene = () => {
     // Добавляем обработчик для кнопки "Назад"
     window.addEventListener("popstate", handleBackNavigation);
    */
-
-  }, []);
-
-
-  const handleBeforeUnload = () => {
-    const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
-    if (videoElement) {
-      videoElement.pause();
-      videoElement.remove();
-    }
-
-    document.body.innerHTML = '';
-    window.location.href = "/"; 
-  };
-
-  window.addEventListener("popstate", handleBeforeUnload);
 
   if (!models) {
     return <div>Loading AR scene...</div>;
