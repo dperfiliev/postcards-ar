@@ -15,7 +15,7 @@ function Loader() {
 function ModelViewer({ modelPath }: { modelPath: string }) {
     const gltf = useGLTF(modelPath, true); 
 
-    return <primitive object={gltf.scene} position={[0, -2, 0]} />;
+    return <primitive object={gltf.scene} position={[0, -1, 0]} />;
 }
 
 export default function Model({ url }: {url: string}) {

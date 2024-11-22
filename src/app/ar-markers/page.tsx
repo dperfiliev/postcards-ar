@@ -6,6 +6,8 @@ import styles from "./page.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Model from "./model";
+import Button from "../components/button/button";
+import Link from "next/link";
 
 function Loader() {
     return <div className={styles.loader}></div>;
@@ -73,7 +75,7 @@ export default function ArMarkers() {
                                     sizes=""
                                     onLoad={handleImageLoad}
                                 />
-                                
+
                             </div>
                             <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/cake/scene.glb'} />
                         </div>
@@ -127,6 +129,12 @@ export default function ArMarkers() {
 
                     </div>
                 </div>
+
+                {selectedMarkerUrl && (
+                    <a href={selectedMarkerUrl} download className={styles.download}>
+                        <Button text="Скачать" />
+                    </a>
+                )}
             </div>
             <Footer />
         </div>

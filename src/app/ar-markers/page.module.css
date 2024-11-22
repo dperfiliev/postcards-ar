@@ -57,11 +57,8 @@
 
 .giftImg {
     border-radius: 15px;
+    border: none;
     padding: 10px;
-}
-
-.download {
-    margin-left: auto;
 }
 
 .choose {
@@ -167,7 +164,6 @@
     gap: 20px;
 }
 
-
 .active {
     background-color: var(--purple);
     border-radius: 10px;
@@ -188,7 +184,13 @@
 .icon {
     padding: 5px;
     border-radius: 50%;
+    border: none;
     object-fit: contain;
+}
+
+.download {
+    margin-left: auto;
+    margin-top: 20px;;
 }
 
 @media (max-width: 1400px) {
@@ -221,6 +223,9 @@
         height: 40px;
     }
 
+    .download {
+        margin-top: 10px;;
+    }
 }
 
 @media (max-width: 768px) {
@@ -238,7 +243,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
     }
 
     .gift {
