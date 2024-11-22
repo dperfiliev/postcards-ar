@@ -20,25 +20,27 @@ export default function ArMarkers() {
     };
 
     const data = [
-        { id: "1", name: "День Рождения", icon: "./images/icons/list/bell.svg", marker: "/images/markers/1.png", model: "./models/cake/scene.glb" },
-        { id: "2", name: "Праздник Сердца", icon: "./images/icons/list/heart.svg", marker: "/images/markers/2.png", model: "./models/heart/scene.glb" },
-        { id: "3", name: "Цветочный Праздник", icon: "./images/icons/list/flower.svg", marker: "/images/markers/3.png", model: "./models/flower/scene.glb" },
-        { id: "4", name: "День защитника отечества", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/flower/scene.glb" },
-        { id: "5", name: "День знаний", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/flower/scene.glb" },
-        { id: "6", name: "Международный женский день", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/flower/scene.glb" },
-        { id: "7", name: "День космонавтики", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/flower/scene.glb" },
+        { id: "1", name: "День Рождения", icon: "./images/icons/list/bell.svg", marker: "/images/markers/1.png", model: "./models/cake/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочиинтерфейс жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе"},
+        { id: "2", name: "Праздник Сердца", icon: "./images/icons/list/heart.svg", marker: "/images/markers/2.png", model: "./models/heart/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейдать гармоничный и удобочиемый интерфейс"},
+        { id: "3", name: "Цветочный Праздник", icon: "./images/icons/list/flower.svg", marker: "/images/markers/3.png", model: "./models/flower/scene.glb", description: "Следуя этим рекациям, вы сможете создать гармоничныйерфейс  создать гарный и удобочитаемый интерфейс"},
+        { id: "4", name: "День защитника отечества", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс"},
+        { id: "5", name: "День знаний", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс" },
+        { id: "6", name: "Международный женский день", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создат гармоничный и удобочитаемый интерфейс" },
+        { id: "7", name: "День космонавтики", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
 
     ];
 
+    const [searchQuery, setSearchQuery] = useState<string>("");
     const [selectedId, setSelectedId] = useState<string>(data[0]?.id || "");
     const [selectedModelUrl, setSelectedModelUrl] = useState<string>(data[0]?.model || "");
     const [selectedMarkerUrl, setSelectedMarkerUrl] = useState<string>(data[0]?.marker || "");
-    const [searchQuery, setSearchQuery] = useState<string>("");
+    const [selectedText, setselectedText] = useState<string>(data[0]?.description || "");
 
-    const handleModelSelect = (id: string, modelUrl: string, markerUrl: string) => {
+    const handleModelSelect = (id: string, modelUrl: string, markerUrl: string, description: string) => {
         setSelectedId(id);
         setSelectedModelUrl(modelUrl);
         setSelectedMarkerUrl(markerUrl);
+        setselectedText(description)
     };
 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -79,12 +81,13 @@ export default function ArMarkers() {
                             </div>
                             <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/cake/scene.glb'} />
                         </div>
+                        <div className={styles.textBlock}>
                         <h2 className="title-2">Название модели</h2>
                         <div className={styles.textScroll}>
                             <p className="text">
-                                Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс,
-                                который будет привлекать пользователей и облегчать им взаимодействие с вашим продуктом.
+                                {selectedText}
                             </p>
+                        </div>
                         </div>
                     </div>
                     <div className={styles.choose}>
@@ -111,7 +114,7 @@ export default function ArMarkers() {
                                     <div
                                         key={item.id}
                                         className={`${styles.item} ${selectedId === item.id ? styles.active : ''}`}
-                                        onClick={() => handleModelSelect(item.id, item.model, item.marker)}
+                                        onClick={() => handleModelSelect(item.id, item.model, item.marker, item.description)}
                                     >
                                         <div className={styles.iconWrapper}>
                                             <Image
