@@ -20,14 +20,17 @@ export default function ArMarkers() {
     };
 
     const data = [
-        { id: "1", name: "День Рождения", icon: "./images/icons/list/bell.svg", marker: "/images/markers/1.png", model: "./models/cake/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочиинтерфейс жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе"},
-        { id: "2", name: "Праздник Сердца", icon: "./images/icons/list/heart.svg", marker: "/images/markers/2.png", model: "./models/heart/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейдать гармоничный и удобочиемый интерфейс"},
-        { id: "3", name: "Цветочный Праздник", icon: "./images/icons/list/flower.svg", marker: "/images/markers/3.png", model: "./models/flower/scene.glb", description: "Следуя этим рекациям, вы сможете создать гармоничныйерфейс  создать гарный и удобочитаемый интерфейс"},
-        { id: "4", name: "День защитника отечества", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс"},
-        { id: "5", name: "День знаний", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс" },
-        { id: "6", name: "Международный женский день", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создат гармоничный и удобочитаемый интерфейс" },
-        { id: "7", name: "День космонавтики", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/flower/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
-
+        { id: "1", name: "День знаний", icon: "./images/icons/list/cake.svg", marker: "/images/markers/1.png", model: "./models/bell/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочиинтерфейс жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе"},
+        { id: "2", name: "День рождения (Торт)", icon: "./images/icons/list/nine.svg", marker: "/images/markers/2.png", model: "./models/cake/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейдать гармоничный и удобочиемый интерфейс"},
+        { id: "3", name: "День рождения (Подарок)", icon: "./images/icons/list/gift.svg", marker: "/images/markers/3.png", model: "./models/gift/scene.glb", description: "Следуя этим рекациям, вы сможете создать гармоничныйерфейс  создать гарный и удобочитаемый интерфейс"},
+        { id: "4", name: "День святого Валентина", icon: "./images/icons/list/tree.svg", marker: "/images/markers/4.png", model: "./models/heart/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс"},
+        { id: "5", name: "День Победы", icon: "./images/icons/list/tree.svg", marker: "/images/markers/0.png", model: "./models/nine/scene.glb", description: "Следуя этим рекомендациям сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс" },
+        { id: "6", name: "День космонавтики", icon: "./images/icons/list/tree.svg", marker: "/images/markers/1.png", model: "./models/rocket/scene.glb", description: "Следуя этим рекомендациям, вы сможете создат гармоничный и удобочитаемый интерфейс" },
+        { id: "7", name: "Международный женский день", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/rose/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "8", name: "Новый год (Снеговик)", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/snowman/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "9", name: "СФУ", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/squirrel/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "10", name: "День защитника отечества", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/star/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "11", name: "Новый год (Ёлка)", icon: "./images/icons/list/tree.svg", marker: "/images/markers/2.png", model: "./models/tree/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
     ];
 
     const [searchQuery, setSearchQuery] = useState<string>("");
@@ -79,7 +82,7 @@ export default function ArMarkers() {
                                 />
 
                             </div>
-                            <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/cake/scene.glb'} />
+                            <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/snowman/scene.glb'} />
                         </div>
                         <div className={styles.textBlock}>
                         <h2 className="title-2">Название модели</h2>

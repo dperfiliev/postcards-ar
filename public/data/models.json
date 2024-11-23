@@ -1,10 +1,57 @@
 {
   "marker1": {
-    "model": "/models/cake/scene.glb",
-    "patt": "/patterns/1.patt"
+    "model": "/models/rocket/scene.glb",
+    "patt": "/patterns/rocket.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
   },
   "marker2": {
-    "model": "/models/flower/scene.glb",
-    "patt": "/patterns/2.patt"
+    "model": "/models/snowman/scene.glb",
+    "patt": "/patterns/snowman.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker3": {
+    "model": "/models/tree/scene.glb",
+    "patt": "/patterns/tree.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker4": {
+    "model": "/models/heart/scene.glb",
+    "patt": "/patterns/heart.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker5": {
+    "model": "/models/bell/scene.glb",
+    "patt": "/patterns/bell.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker6": {
+    "model": "/models/cake/scene.glb",
+    "patt": "/patterns/cake.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker7": {
+    "model": "/models/gift/scene.glb",
+    "patt": "/patterns/gift.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker8": {
+    "model": "/models/nine/scene.glb",
+    "patt": "/patterns/nine.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker9": {
+    "model": "/models/rose/scene.glb",
+    "patt": "/patterns/rose.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker10": {
+    "model": "/models/squirrel/scene.glb",
+    "patt": "/patterns/squirrel.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
+  },
+  "marker11": {
+    "model": "/models/star/scene.glb",
+    "patt": "/patterns/star.patt",
+    "particleTexture": "/images/icons/ui/close.svg"
   }
 }

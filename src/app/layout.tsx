@@ -33,6 +33,7 @@ export default function RootLayout({
         
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js" />
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js" />
+        <script src="./scripts/aframe-particle-system-component.js" />
         <script src="./scripts/gesture-detector.js" />
         <script src="./scripts/gesture-handler.js" />
 

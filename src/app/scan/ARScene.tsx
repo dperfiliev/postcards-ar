@@ -10,6 +10,7 @@ interface ModelsData {
   [key: string]: {
     model: string;
     patt: string;
+    particleTexture: string;
   };
 }
 
@@ -47,7 +48,7 @@ const ARScene = () => {
   useEffect(() => {
     loadModels()
 
-    window.addEventListener("popstate",cleanUpARScene);
+    window.addEventListener("popstate", cleanUpARScene);
   }, []);
 
   /*
@@ -97,7 +98,7 @@ const ARScene = () => {
         device-orientation-permission-ui=""
         gesture-detector
       >
-        {Object.entries(models).map(([key, { model, patt }]) => (
+        {Object.entries(models).map(([key, { model, patt, particleTexture }]) => (
           <a-marker key={key} preset="custom" type="pattern" url={patt}
             raycaster="objects: .clickable"
             emitevents="true"
@@ -110,6 +111,25 @@ const ARScene = () => {
               rotation="0 0 0"
               gesture-handler="minScale: 0.5; maxScale: 2"
             ></a-entity>
+
+
+            <a-entity
+              particle-system={`
+                texture: ${particleTexture};
+                color: #FF0000, #FFFF00;
+                size: 1, 0;
+                velocityValue: 0.001 0.001 0.001;
+                velocitySpread: 0.5 0 0.5;
+                accelerationValue: 0.001 0.001 0.001;
+                accelerationSpread: 0.001 0.001 0.001;
+                rotationAngle: 0;
+                blending: 1;
+                particleCount: 200;
+                maxAge: 5;
+              `}
+              position="0 0 0"
+            ></a-entity>
+
           </a-marker>
         ))}
         <a-entity camera="fov: 50;"></a-entity>
