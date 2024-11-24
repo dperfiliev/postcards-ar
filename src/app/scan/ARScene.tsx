@@ -117,7 +117,7 @@ const ARScene = () => {
               particle-system={`
                 texture: ${particleTexture};
                 color: ${color};
-                size: 1, 0;
+                size: 2, 0;
                 velocityValue: 0.001 0.001 0.001;
                 velocitySpread: 0.5 0 0.5;
                 accelerationValue: 0.001 0.001 0.001;
@@ -125,7 +125,7 @@ const ARScene = () => {
                 rotationAngle: 0;
                 blending: 2;
                 particleCount: 200;
-                maxAge: 7;
+                maxAge: 5;
               `}
               position="0 0.1 0"
             ></a-entity>
