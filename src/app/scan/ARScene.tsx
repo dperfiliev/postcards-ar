@@ -11,6 +11,7 @@ interface ModelsData {
     model: string;
     patt: string;
     particleTexture: string;
+    color: string;
   };
 }
 
@@ -98,7 +99,7 @@ const ARScene = () => {
         device-orientation-permission-ui=""
         gesture-detector
       >
-        {Object.entries(models).map(([key, { model, patt, particleTexture }]) => (
+        {Object.entries(models).map(([key, { model, patt, particleTexture, color }]) => (
           <a-marker key={key} preset="custom" type="pattern" url={patt}
             raycaster="objects: .clickable"
             emitevents="true"
@@ -112,22 +113,21 @@ const ARScene = () => {
               gesture-handler="minScale: 0.5; maxScale: 2"
             ></a-entity>
 
-
             <a-entity
               particle-system={`
                 texture: ${particleTexture};
-                color: #FF0000, #FFFF00;
+                color: ${color};
                 size: 1, 0;
                 velocityValue: 0.001 0.001 0.001;
                 velocitySpread: 0.5 0 0.5;
                 accelerationValue: 0.001 0.001 0.001;
                 accelerationSpread: 0.001 0.001 0.001;
                 rotationAngle: 0;
-                blending: 1;
+                blending: 2;
                 particleCount: 200;
-                maxAge: 5;
+                maxAge: 7;
               `}
-              position="0 0 0"
+              position="0 0.1 0"
             ></a-entity>
 
           </a-marker>
