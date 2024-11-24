@@ -7,27 +7,27 @@ import ARScene from "./ARScene"
 import Button from "../components/button/button"
 
 
-import { useRouter } from "next/navigation";
+import html2canvas from "html2canvas"
+
 
 export default function Scan() {
 
-    const router = useRouter();
 
     const goToMainPage = () => {
       window.location.href = "/";  // Принудительное обновление страницы
     };
 
-
     
+  
+  
     return (
 
-        
       <div className={styles.scan}>
             <ARScene />
             
             <div className={styles.panel}>
-                <Button text="Главная" onClick={goToMainPage}/>
-                <Button text="Снимок" />
+                <Button isRound={true} imgSrc="./images/icons/ui/close-black.svg" onClick={goToMainPage}/>
+                {/**/}
             </div>
             
         </div>

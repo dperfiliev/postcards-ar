@@ -14,13 +14,58 @@ interface ButtonT {
 
 export default function Button({ isRound, isScalable, text, imgSrc, href, onClick }: ButtonT) {
     return (
-        isRound && href ? (
-            <Link href={href}>
-                <button className={styles.button_round}>
-                    {imgSrc && (<Image className={styles.icon} src={imgSrc} alt="" fill />)}
+        isScalable ? (
+            href ? (
+                <Link href={href}>
+                    <button className={styles.scalable}>
+                        {imgSrc && (<Image className={styles.icon_scalable} src={imgSrc} alt="" fill />)}
+                        <span className={`text-button ${styles.text}`}>
+                            {text}
+                        </span>
+                    </button>
+                </Link>
+            ) : (
+                <button className={styles.scalable}>
+                    <span className="text-button">
+                        {text}
+                    </span>
                 </button>
-            </Link>
+            )
         ) : (
+            isRound && imgSrc ? (
+                href ? (
+                    <Link href={href}>
+                        <button className={styles.button_round}>
+                            (<Image className={styles.icon} src={imgSrc} alt="" fill />)
+                        </button>
+                    </Link>
+                ) : (
+                    <button className={styles.button_round} onClick={onClick}>
+                        <Image className={styles.icon} src={imgSrc} alt="" fill />
+                    </button>
+                )
+            ) : (
+                <button className={styles.button} onClick={onClick}>
+                    <span className="text-button">
+                        {text}
+                    </span>
+                </button>
+            )
+        )
+
+
+       /*
+         isRound && href ? (
+        <Link href={href}>
+            <button className={styles.button_round}>
+                {imgSrc && (<Image className={styles.icon} src={imgSrc} alt="" fill />)}
+            </button>
+        </Link>
+    ) :
+
+
+
+        (
             isScalable && href ? (
                 <Link href={href}>
                     <button className={styles.scalable}>
@@ -41,12 +86,18 @@ export default function Button({ isRound, isScalable, text, imgSrc, href, onClic
                     </Link>
                 )
                     :
-                    <button className={styles.button} onClick={onClick}>
+                    imgSrc && isRound ? (
+                        <button className={styles.button_round}>
+                            <Image className={styles.icon} src={imgSrc} alt="" fill />
+                        </button>
+                    ) : (<button className={styles.button} onClick={onClick}>
                         <span className="text-button">
                             {text}
                         </span>
-                    </button>
+                    </button>)
             )
         )
+        */
+
     )
 }
