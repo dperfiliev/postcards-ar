@@ -12,6 +12,7 @@
 }
 
 
+/*
 .light {
     position: absolute;
     z-index: -1;
@@ -48,6 +49,7 @@
     }
 }
 
+*/
 
 .img {
     padding: 5px;
@@ -56,12 +58,14 @@
     object-fit: contain;
 }
 
+/*
 @media (max-width: 768px) {
     .light {
         filter: blur(6vh);
     }
 }
 
+*/
 
 @media (max-width: 576px) {
     .button {
