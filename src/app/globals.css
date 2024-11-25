@@ -3,10 +3,17 @@
   --secondary: #050000;
   --neutral: #D9D9D9;
 
+  /*
   --bg: #151224;
   --cyan: #0CFFD6;
   --pink: #D91480;
   --purple: #5821A6; 
+  */
+
+  --bg: hsl(250, 30%, 10%);
+  --cyan: hsl(180, 100%, 50%);
+  --pink: hsl(330, 80%, 30%);
+  --purple: hsl(270, 80%, 20%);
 
   --container: rgba(0, 0, 0, 0.2);
 }
@@ -211,7 +218,8 @@ a {
 }
 
 .text-logotype:hover {
-  text-shadow: 2px 2px 2px var(--pink);;
+  text-shadow: 2px 2px 2px var(--pink);
+  ;
 }
 
 .title-0 {
@@ -361,30 +369,30 @@ a {
   .pink_1 {
     filter: blur(10vh);
   }
-  
+
   .purple_1 {
     filter: blur(10vh);
   }
-  
+
   .cyan_1 {
     filter: blur(10vh);
   }
-  
+
   .pink_2 {
     filter: blur(10vh);
   }
-  
+
   .purple_2 {
     filter: blur(10vh);
   }
-  
+
   .cyan_2 {
     filter: blur(10vh);
   }
-  
+
 }
 
-@media (max-width: 567px ) {
+@media (max-width: 567px) {
   .pagedesign {
     padding: 10px;
   }
