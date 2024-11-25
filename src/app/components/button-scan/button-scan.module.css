@@ -1,6 +1,4 @@
 .button {
-    position: relative;
-
     width: 60px;
     height: 60px;
     border: none;
@@ -13,37 +11,43 @@
     cursor: pointer;
 }
 
+
 .light {
     position: absolute;
     z-index: -1;
 
-    width: 110%;
-    height: 120%;
+    width: 140%;
+    height: 150%;
 
     border-radius: 50%;
-    background-color: #D91480;
-    filter: blur(calc(2vw + 2vh));
+    background-color: var(--cyan);
+    filter: blur(6vw);
 
     animation: around 10s infinite ease;
 }
 
 @keyframes around {
-    0%, 100% {
-        left: 10%;
-        bottom: 10%;
-        background-color: #0CFFD6;
+
+    0%,
+    100% {
+        left: -30%;
+        top: -30%;
+        background-color: var(--cyan);
         transform: rotate(90deg);
     }
+
     50% {
-        background-color: #5821A6;
+        background-color: var(--pink);
     }
+
     75% {
-        left: -15%;
-        bottom: -15%;
-        background-color: #D91480;
+        left: 0%;
+        top: 0%;
+        background-color: var(--purple);
         transform: rotate(-90deg);
     }
 }
+
 
 .img {
     padding: 5px;
@@ -51,6 +55,13 @@
     border-radius: 25%;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    .light {
+        filter: blur(6vh);
+    }
+}
+
 
 @media (max-width: 576px) {
     .button {

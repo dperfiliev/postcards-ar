@@ -54,6 +54,8 @@ a {
   overflow: hidden;
 }
 
+/**/
+
 .pink_1 {
   position: absolute;
   left: -10%;
@@ -64,7 +66,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
 }
 
 .purple_1 {
@@ -77,20 +79,40 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
 }
 
 .cyan_1 {
   position: absolute;
-  left: 0%;
+  left: 10%;
   bottom: 20%;
 
   width: 20%;
-  height: 20%;
+  height: 30%;
 
   border-radius: 50%;
   background-color: var(--cyan);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
+
+  animation: cyan_1 10s infinite ease;
+}
+
+@keyframes cyan_1 {
+  0%, 100% {
+    left: 0%;
+    bottom: 10%;
+      background-color: var(--cyan);
+      transform: rotate(-90deg);
+  }
+  50% {
+      background-color: var(--purple);
+  }
+  75% {
+      left: 40%;
+      bottom: 40%;
+      background-color: var(--pink);
+      transform: rotate(90deg);
+  }
 }
 
 .pink_2 {
@@ -103,7 +125,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
 }
 
 .purple_2 {
@@ -116,7 +138,8 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
+
 }
 
 .cyan_2 {
@@ -129,17 +152,31 @@ a {
 
   border-radius: 50%;
   background-color: var(--cyan);
-  filter: blur(calc(5vw + 5vh));
+  filter: blur(8vw);
+
+  animation: cyan_2 10s infinite ease;
 }
 
-@keyframes down {
+@keyframes cyan_2 {
   0%, 100% {
-    bottom: -10%
+    right: 0%;
+    top: 10%;
+      background-color: var(--cyan);
+      transform: rotate(90deg);
   }
-  70% {
-    bottom: 0%; 
+  50% {
+      background-color: var(--purple);
+  }
+  75% {
+      right: 40%;
+      top: 40%;
+      background-color: var(--pink);
+      transform: rotate(-90deg);
   }
 }
+
+
+/**/
 
 .container {
   width: 90%;
@@ -312,6 +349,31 @@ a {
   .number {
     font-size: 28px;
   }
+
+  .pink_1 {
+    filter: blur(10vh);
+  }
+  
+  .purple_1 {
+    filter: blur(10vh);
+  }
+  
+  .cyan_1 {
+    filter: blur(10vh);
+  }
+  
+  .pink_2 {
+    filter: blur(10vh);
+  }
+  
+  .purple_2 {
+    filter: blur(10vh);
+  }
+  
+  .cyan_2 {
+    filter: blur(10vh);
+  }
+  
 }
 
 @media (max-width: 567px ) {
