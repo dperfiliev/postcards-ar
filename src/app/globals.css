@@ -66,7 +66,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
-  filter: blur(8vw);
+  filter: blur(10vw);
 }
 
 .purple_1 {
@@ -79,7 +79,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
-  filter: blur(8vw);
+  filter: blur(10vw);
 }
 
 .cyan_1 {
@@ -92,7 +92,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--cyan);
-  filter: blur(8vw);
+  filter: blur(10vw);
 
   animation: cyan_1 10s infinite ease;
 }
@@ -129,7 +129,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
-  filter: blur(8vw);
+  filter: blur(10vw);
 }
 
 .purple_2 {
@@ -142,7 +142,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
-  filter: blur(8vw);
+  filter: blur(10vw);
 
 }
 
@@ -156,7 +156,7 @@ a {
 
   border-radius: 50%;
   background-color: var(--cyan);
-  filter: blur(8vw);
+  filter: blur(10vw);
 
   animation: cyan_2 10s infinite ease;
 }
