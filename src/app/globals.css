@@ -1,21 +1,28 @@
 :root {
+  /*
+
   --primary: #fff;
   --secondary: #050000;
   --neutral: #D9D9D9;
 
-  /*
   --bg: #151224;
   --cyan: #0CFFD6;
   --pink: #D91480;
   --purple: #5821A6; 
+  --container: rgba(0, 0, 0, 0.2);
+
   */
+
+  --primary: hsl(0, 0%, 100%); 
+  --secondary: hsl(0, 0%, 2%); 
+  --neutral: hsl(0, 0%, 85%); 
 
   --bg: hsl(250, 30%, 10%);
   --cyan: hsl(180, 100%, 50%);
   --pink: hsl(330, 80%, 30%);
   --purple: hsl(270, 80%, 20%);
 
-  --container: rgba(0, 0, 0, 0.2);
+  --container: hsla(0, 0%, 0%, 0.2);
 }
 
 
@@ -104,7 +111,7 @@ a {
   animation: cyan_1 10s infinite ease;
 }
 
-/*
+
 
 @keyframes cyan_1 {
   0%, 100% {
@@ -124,7 +131,7 @@ a {
   }
 }
 
-*/
+
 
 .pink_2 {
   position: absolute;
@@ -168,7 +175,7 @@ a {
   animation: cyan_2 10s infinite ease;
 }
 
-/*
+
 
 @keyframes cyan_2 {
   0%, 100% {
@@ -189,7 +196,7 @@ a {
 }
 
 
-*/
+
 
 /**/
 
