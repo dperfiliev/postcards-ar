@@ -97,6 +97,8 @@ a {
   animation: cyan_1 10s infinite ease;
 }
 
+/*
+
 @keyframes cyan_1 {
   0%, 100% {
     left: 0%;
@@ -114,6 +116,8 @@ a {
       transform: rotate(90deg);
   }
 }
+
+*/
 
 .pink_2 {
   position: absolute;
@@ -157,6 +161,8 @@ a {
   animation: cyan_2 10s infinite ease;
 }
 
+/*
+
 @keyframes cyan_2 {
   0%, 100% {
     right: 0%;
@@ -175,6 +181,8 @@ a {
   }
 }
 
+
+*/
 
 /**/
 
