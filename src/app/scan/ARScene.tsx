@@ -107,7 +107,7 @@ const ARScene = () => {
           >
             <a-entity
               gltf-model={model}
-              scale="1 1 1"
+              scale="1.2 1.2 1.2"
               position="0 0 0"
               rotation="0 0 0"
               gesture-handler="minScale: 0.5; maxScale: 2"
@@ -117,15 +117,15 @@ const ARScene = () => {
               particle-system={`
                 texture: ${particleTexture};
                 color: ${color};
-                size: 2, 0;
+                size: 3, 0;
                 velocityValue: 0.001 0.001 0.001;
                 velocitySpread: 0.5 0 0.5;
                 accelerationValue: 0.001 0.001 0.001;
                 accelerationSpread: 0.001 0.001 0.001;
                 rotationAngle: 0;
                 blending: 2;
-                particleCount: 200;
-                maxAge: 5;
+                particleCount: 100;
+                maxAge: 7;
               `}
               position="0 0.1 0"
             ></a-entity>

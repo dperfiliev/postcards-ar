@@ -9,7 +9,7 @@
     "model": "/models/snowman/scene.glb",
     "patt": "/patterns/snowman.patt",
     "particleTexture": "/images/particles/snowman.svg",
-    "color": "#1100FF, #FFFFFF"
+    "color": "#FFFFFF, #FFFFFF"
   },
   "marker3": {
     "model": "/models/tree/scene.glb",
