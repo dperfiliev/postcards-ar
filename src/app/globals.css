@@ -19,8 +19,8 @@
 
   --bg: hsl(250, 30%, 10%);
   --cyan: hsl(180, 100%, 50%);
-  --pink: hsl(330, 80%, 30%);
-  --purple: hsl(270, 80%, 20%);
+  --pink: hsl(330, 100%, 50%);
+  --purple: hsl(270, 88%, 27%);
 
   --container: hsla(0, 0%, 0%, 0.2);
 }
@@ -220,8 +220,11 @@ a {
 }
 
 .text-logotype {
-  font-weight: 700;
+  font-family: var(--font);
+  color: var(--white);
   font-size: 30px;
+
+  /*font-weight: 700;*/
 }
 
 .text-logotype:hover {
