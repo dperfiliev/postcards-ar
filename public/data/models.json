@@ -63,6 +63,6 @@
     "model": "/models/star/scene.glb",
     "patt": "/patterns/star.patt",
     "particleTexture": "/images/particles/star.svg",
-    "color": "#FF0000, #FF0040"
+    "color": "#FFFF00, #FFFF00"
   }
 }
