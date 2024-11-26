@@ -20,17 +20,17 @@ export default function ArMarkers() {
     };
 
     const data = [
-        { id: "1", name: "День знаний", icon: "./images/icons/list/bell.svg", marker: "/images/markers/bell.jpg", download: "/images/downloads/bell.png",  model: "./models/bell/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочиинтерфейс жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе жете создать гармоничный и удобочиинтерфе"},
-        { id: "2", name: "День рождения (Торт)", icon: "./images/icons/list/cake.svg", marker: "/images/markers/cake.jpg", download: "/images/downloads/cake.png", model: "./models/cake/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейдать гармоничный и удобочиемый интерфейс"},
-        { id: "3", name: "День рождения (Подарок)", icon: "./images/icons/list/gift.svg", marker: "/images/markers/gift.jpg", download: "/images/downloads/gift.png", model: "./models/gift/scene.glb", description: "Следуя этим рекациям, вы сможете создать гармоничныйерфейс  создать гарный и удобочитаемый интерфейс"},
-        { id: "4", name: "День святого Валентина", icon: "./images/icons/list/heart.svg", marker: "/images/markers/heart.jpg", download: "/images/downloads/heart.png", model: "./models/heart/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс"},
-        { id: "5", name: "День Победы", icon: "./images/icons/list/nine.svg", marker: "/images/markers/nine.jpg", download: "/images/downloads/nine.png", model: "./models/nine/scene.glb", description: "Следуя этим рекомендациям сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс" },
-        { id: "6", name: "День космонавтики", icon: "./images/icons/list/rocket.svg", marker: "/images/markers/rocket.jpg", download: "/images/downloads/rocket.png", model: "./models/rocket/scene.glb", description: "Следуя этим рекомендациям, вы сможете создат гармоничный и удобочитаемый интерфейс" },
-        { id: "7", name: "Международный женский день", icon: "./images/icons/list/rose.svg", marker: "/images/markers/rose.jpg", download: "/images/downloads/rose.png", model: "./models/rose/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
-        { id: "8", name: "Новый год (Снеговик)", icon: "./images/icons/list/snowman.svg", marker: "/images/markers/snowman.jpg", download: "/images/downloads/snowman.png", model: "./models/snowman/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
-        { id: "9", name: "СФУ", icon: "./images/icons/list/squirrel.svg", marker: "/images/markers/squirrel.jpg", download: "/images/downloads/squirrel.png", model: "./models/squirrel/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
-        { id: "10", name: "День защитника отечества", icon: "./images/icons/list/star.svg", marker: "/images/markers/star.jpg", download: "/images/downloads/star.png", model: "./models/star/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
-        { id: "11", name: "Новый год (Ёлка)", icon: "./images/icons/list/tree.svg", marker: "/images/markers/tree.jpg", download: "/images/downloads/tree.png", model: "./models/tree/scene.glb", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "1", name: "День знаний", icon: "./images/icons/list/bell.svg", marker: "/images/markers/bell.jpg", download: "/images/downloads/bell.png", model: "./models/bell/scene.glb", modelName: "Колокольчик", description: "Колокольчик с золотистым корпусом и яркой красной лентой, аккуратно завязанной вокруг ручки, олицетворяет начало учебного года. Он излучает атмосферу праздника и торжественности, добавляя особое значение и радость в этот важный момент."},
+        { id: "2", name: "День рождения (Торт)", icon: "./images/icons/list/cake.svg", marker: "/images/markers/cake.jpg", download: "/images/downloads/cake.png", model: "./models/cake/scene.glb", modelName: "Помадковый торт", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейдать гармоничный и удобочиемый интерфейс"},
+        { id: "3", name: "День рождения (Подарок)", icon: "./images/icons/list/gift.svg", marker: "/images/markers/gift.jpg", download: "/images/downloads/gift.png", model: "./models/gift/scene.glb", modelName: "Подарок с бантом", description: "Следуя этим рекациям, вы сможете создать гармоничныйерфейс  создать гарный и удобочитаемый интерфейс"},
+        { id: "4", name: "День святого Валентина", icon: "./images/icons/list/heart.svg", marker: "/images/markers/heart.jpg", download: "/images/downloads/heart.png", model: "./models/heart/scene.glb", modelName: "Сердце", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс"},
+        { id: "5", name: "День Победы", icon: "./images/icons/list/nine.svg", marker: "/images/markers/nine.jpg", download: "/images/downloads/nine.png", model: "./models/nine/scene.glb", modelName: "Без названия", description: "Следуя этим рекомендациям сможете создать гармоничный и удобочитаемый интерфейс  создать гармоничный и удобочитаемый интерфейс" },
+        { id: "6", name: "День космонавтики", icon: "./images/icons/list/rocket.svg", marker: "/images/markers/rocket.jpg", download: "/images/downloads/rocket.png", model: "./models/rocket/scene.glb", modelName: "Космическая ракета", description: "Следуя этим рекомендациям, вы сможете создат гармоничный и удобочитаемый интерфейс" },
+        { id: "7", name: "Международный женский день", icon: "./images/icons/list/rose.svg", marker: "/images/markers/rose.jpg", download: "/images/downloads/rose.png", model: "./models/rose/scene.glb", modelName: "Бутон розы", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "8", name: "Новый год (Снеговик)", icon: "./images/icons/list/snowman.svg", marker: "/images/markers/snowman.jpg", download: "/images/downloads/snowman.png", model: "./models/snowman/scene.glb", modelName: "Снеговик", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "9", name: "День основания СФУ", icon: "./images/icons/list/squirrel.svg", marker: "/images/markers/squirrel.jpg", download: "/images/downloads/squirrel.png", model: "./models/squirrel/scene.glb", modelName: "Белочка", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "10", name: "День защитника отечества", icon: "./images/icons/list/star.svg", marker: "/images/markers/star.jpg", download: "/images/downloads/star.png", model: "./models/star/scene.glb", modelName: "Орден", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
+        { id: "11", name: "Новый год (Ёлка)", icon: "./images/icons/list/tree.svg", marker: "/images/markers/tree.jpg", download: "/images/downloads/tree.png", model: "./models/tree/scene.glb", modelName: "Ёлка", description: "Следуя этим рекомендациям, вы сможете создать гармоничный и удобочитаемый интес  создать гармоничный и удобочитаемый инфейс" },
     ];
 
     const [searchQuery, setSearchQuery] = useState<string>("");
@@ -38,14 +38,16 @@ export default function ArMarkers() {
     const [selectedModelUrl, setSelectedModelUrl] = useState<string>(data[0]?.model || "");
     const [selectedMarkerUrl, setSelectedMarkerUrl] = useState<string>(data[0]?.marker || "");
     const [selectedDownload, setSelectedDownload] = useState<string>(data[0]?.download || "");
+    const [selectedModelName, setSelectedModelName] = useState<string>(data[0]?.modelName || "");
     const [selectedText, setselectedText] = useState<string>(data[0]?.description || "");
 
-    const handleModelSelect = (id: string, modelUrl: string, markerUrl: string, download: string, description: string) => {
+    const handleModelSelect = (id: string, modelUrl: string, markerUrl: string, download: string, modelName: string, description: string) => {
         setSelectedId(id);
         setSelectedModelUrl(modelUrl);
         setSelectedMarkerUrl(markerUrl);
-        setSelectedDownload(download)
-        setselectedText(description)
+        setSelectedDownload(download);
+        setSelectedModelName(modelName);
+        setselectedText(description);
     };
 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -89,7 +91,7 @@ export default function ArMarkers() {
                             <Model key={selectedModelUrl} url={selectedModelUrl ?? './models/snowman/scene.glb'} />
                         </div>
                         <div className={styles.textBlock}>
-                        <h2 className="title-2">Название модели</h2>
+                        <h2 className="title-2">{selectedModelName}</h2>
                         <div className={styles.textScroll}>
                             <p className="text">
                                 {selectedText}
@@ -121,7 +123,7 @@ export default function ArMarkers() {
                                     <div
                                         key={item.id}
                                         className={`${styles.item} ${selectedId === item.id ? styles.active : ''}`}
-                                        onClick={() => handleModelSelect(item.id, item.model, item.marker, item.download, item.description)}
+                                        onClick={() => handleModelSelect(item.id, item.model, item.marker, item.download, item.modelName, item.description)}
                                     >
                                         <div className={styles.iconWrapper}>
                                             <Image

@@ -13,6 +13,7 @@
     gap: 40px;
 
     overflow-y: auto;
+    scroll-behavior: smooth;
 
     scrollbar-width: 1px;
     scrollbar-color: var(--primary);

@@ -33,7 +33,7 @@ export default function Model({ url }: { url: string }) {
 
     return (
         <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [2, 1, 1], fov: 75 }}>
-            <ambientLight intensity={2.5} />
+            <ambientLight intensity={2} />
             <pointLight position={[10, 10, 10]} />
 
             <Suspense fallback={<Loader />}>

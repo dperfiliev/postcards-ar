@@ -114,8 +114,10 @@
 
         flex-basis: 150px;
         gap: 40px;
-        overflow-y: auto;
         flex-grow: 1;
+
+        overflow-y: auto;
+        scroll-behavior: smooth;
 
         scrollbar-width: 1px;
         scrollbar-color: var(--primary);
@@ -123,7 +125,6 @@
 
         padding-right: 10px;
     }
-
 
     .cards::-webkit-scrollbar {
         background-color: var(--primary);
@@ -135,7 +136,6 @@
         background-color: var(--purple);
         border-radius: 1px;
     }
-
 
     .cardWrapper {
         height: auto;
