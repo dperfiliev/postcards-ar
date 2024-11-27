@@ -31,10 +31,10 @@
    --secondary: hsl(0, 0%, 2%); 
    --neutral: hsl(0, 0%, 85%); 
  
-   --bg: #151224; 
-   --cyan: #f6ff00; 
-   --pink: #ff439e; 
-   --purple: #473167; 
+   --bg: hsl(240, 30%, 10%);
+   --cyan: hsl(70, 100%, 50%);
+   --pink: hsl(330, 100%, 60%);
+   --purple: hsl(260, 30%, 30%);
 }
 
 
