@@ -57,13 +57,13 @@ export default function About() {
                     </div>
                     <div className={styles.section}>
                         <h2 className="title-2">
-                            О разработчиках
+                            Разработчики
                         </h2>
                         <p className="text">
-                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="/ar-markers">Перфильев Данил Владимирович</Link>.
+                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="/ar-markers">Перфильев Данил</Link>.
                         </p>
                         <p className="text">
-                            3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван Владимирович</Link>.
+                            3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван</Link>.
                         </p>
                     </div>
                 </div>
