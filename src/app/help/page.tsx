@@ -47,7 +47,7 @@ export default function Help() {
                                 <div key={item.id} className={styles.cardWrapper}>
                                     <div className={styles.card}>
                                         <div className={styles.item}>
-                                            <Image className={styles.img} src={item.imgSrc} alt="" fill />
+                                            <Image className={styles.img} src={item.imgSrc} alt="" fill sizes="(max-width: 1400px) 350px, (max-width: 576px) 250px"/>
                                         </div>
                                         <div className={styles.number}>
                                             <p className="number">
@@ -78,7 +78,7 @@ export default function Help() {
                                 <div key={item.id} className={styles.cardWrapper}>
                                     <div className={styles.card}>
                                         <div className={styles.item}>
-                                            <Image className={styles.img} src={item.imgSrc} alt="" fill />
+                                            <Image className={styles.img} src={item.imgSrc} alt="" fill sizes="(max-width: 1400px) 350px, (max-width: 576px) 250px"/>
                                         </div>
                                         <div className={styles.number}>
                                             <p className="number">

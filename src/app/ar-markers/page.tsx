@@ -58,8 +58,6 @@ export default function ArMarkers() {
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    console.log(selectedDownload)
-
     return (
         <div className="pagedesign">
             <div className="gradients">
@@ -83,7 +81,7 @@ export default function ArMarkers() {
                                     src={selectedMarkerUrl ?? "/images/markers/rocket.jpg"}
                                     alt=""
                                     fill
-                                    sizes=""
+                                    sizes="(max-width: 1400px) 100px, (max-width: 576px) 80px"
                                     onLoad={handleImageLoad}
                                 />
 
@@ -113,7 +111,7 @@ export default function ArMarkers() {
                                     className={styles.cancel}
                                     onClick={() => setSearchQuery("")}
                                 >
-                                    <Image className={styles.inputIcon} src={searchQuery.length == 0 ? "/images/icons/ui/search.svg" : "/images/icons/ui/close.svg"} alt="" fill />
+                                    <Image className={styles.inputIcon} src={searchQuery.length == 0 ? "/images/icons/ui/search.svg" : "/images/icons/ui/close.svg"} alt="" fill sizes="40px"/>
                                 </button>
                             </div>
                         </div>

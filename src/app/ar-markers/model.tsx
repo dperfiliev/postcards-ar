@@ -24,7 +24,7 @@ function ModelViewer({ modelPath }: { modelPath: string }) {
         }
     });
 
-    return <primitive ref={meshRef} object={gltf.scene} position={[0, -1, 0]} />;
+    return <primitive ref={meshRef} object={gltf.scene} position={[0, -0.9, 0]} />;
 }
 
 export default function Model({ url }: { url: string }) {
@@ -32,9 +32,9 @@ export default function Model({ url }: { url: string }) {
     const modelPath = url;
 
     return (
-        <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [2, 1, 1], fov: 75 }}>
+        <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [1.5, 0.5, 1], fov: 75 }}>
             <ambientLight intensity={2} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[0, 1.5, 0]} />
 
             <Suspense fallback={<Loader />}>
                 <ModelViewer modelPath={modelPath} />
