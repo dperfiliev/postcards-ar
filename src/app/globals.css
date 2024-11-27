@@ -27,14 +27,14 @@
    --container: hsla(0, 0%, 0%, 0.2);
   */
 
-  --primary: hsl(0, 0%, 100%);
-  --secondary: hsl(0, 0%, 2%);
-  --neutral: hsl(0, 0%, 85%);
-  
-  --bg: hsl(240, 30%, 10%);
-  --cyan: hsl(70, 100%, 50%);
-  --pink: hsl(330, 100%, 60%);
-  --purple: hsl(260, 30%, 30%);
+  --primary: #FFFFFF;
+  --secondary: #050505;
+  --neutral: #D9D9D9;
+
+  --bg: #18101b;
+  --cyan: #ffee00;
+  --pink: #FF3C8A;
+  --purple: #5d4a86;
 }
 
 
