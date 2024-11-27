@@ -10,7 +10,7 @@
 }
 
 .loader {
-    border: 1px solid var(--white);
+    border: 1px solid var(--primary);
     border-radius: 50%;
     border-top: 1px solid var(--container);
     width: 20px;
