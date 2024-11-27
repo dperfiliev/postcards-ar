@@ -100,6 +100,9 @@ export default function ArMarkers() {
                     <div className={styles.choose}>
                         <div className={styles.inputField}>
                             <input
+                                id="holidayName"
+                                name="holidayName"
+                                autoComplete="off"
                                 className={styles.input}
                                 type="text"
                                 placeholder="Поиск..."
