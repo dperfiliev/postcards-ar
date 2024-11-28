@@ -31,10 +31,10 @@
   --secondary: hsl(0, 0%, 2%);
   --neutral: hsl(0, 0%, 85%);
   
-  --bg: hsl(280, 30%, 10%);
   --cyan: hsl(180, 100%, 50%);
-  --pink: hsl(318, 100%, 83%);
-  --purple: hsl(280, 60%, 20%);
+  --pink: hsl(332, 100%, 71%);
+  --purple: hsl(270, 100%, 20%);
+  --bg: hsl(270, 100%, 5%);
 }
 
 
@@ -391,7 +391,7 @@ a {
   }
 
   .cyan_1 {
-    filter: blur(8vh);
+    filter: blur(10vh);
   }
 
   .pink_2 {
@@ -403,7 +403,7 @@ a {
   }
 
   .cyan_2 {
-    filter: blur(8vh);
+    filter: blur(10vh);
   }
 
 }
