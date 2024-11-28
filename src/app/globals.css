@@ -27,14 +27,16 @@
    --container: hsla(0, 0%, 0%, 0.2);
   */
 
-  --primary: rgb(255, 255, 255); 
---secondary: rgb(5, 5, 5); 
---neutral: rgb(217, 217, 217); 
-
---cyan: rgb(0, 255, 255); 
---pink: rgb(255, 148, 198); 
---purple: rgb(57, 0, 75); 
---bg: rgb(13, 0, 26); 
+  --primary: hsl(0, 0%, 100%); 
+   --secondary: hsl(0, 0%, 2%); 
+   --neutral: hsl(0, 0%, 85%); 
+ 
+   --cyan: hsl(180, 100%, 50%); 
+   --pink: hsl(290, 100%, 83%); 
+   --purple: hsl(270, 90%, 30%); 
+   --bg: hsl(278, 100%, 5%); 
+ 
+   --container: hsla(0, 0%, 0%, 0.2);
 }
 
 
@@ -77,6 +79,9 @@ a {
   height: 100%;
 
   background-color: var(--bg);
+  mix-blend-mode: normal;
+  filter: none; 
+
   overflow: hidden;
 }
 
@@ -92,7 +97,9 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
+
   filter: blur(10vw);
+  mix-blend-mode: normal;
 }
 
 .purple_1 {
@@ -105,24 +112,29 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
+
   filter: blur(10vw);
+  mix-blend-mode: normal;
 }
 
 .cyan_1 {
   position: absolute;
-  left: 10%;
-  bottom: 20%;
+  left: 0%;
+  bottom: 10%;
 
   width: 14%;
   height: 30%;
 
   border-radius: 50%;
   background-color: var(--cyan);
+
   filter: blur(8vw);
+  mix-blend-mode: normal;
 
   animation: cyan_1 10s infinite ease;
 }
 
+/*
 @keyframes cyan_1 {
   0%, 100% {
     left: 0%;
@@ -140,6 +152,7 @@ a {
       transform: rotate(90deg);
   }
 }
+*/
 
 
 
@@ -153,7 +166,9 @@ a {
 
   border-radius: 50%;
   background-color: var(--pink);
+
   filter: blur(10vw);
+  mix-blend-mode: normal;
 }
 
 .purple_2 {
@@ -166,25 +181,29 @@ a {
 
   border-radius: 50%;
   background-color: var(--purple);
-  filter: blur(10vw);
 
+  filter: blur(10vw);
+  mix-blend-mode: normal;
 }
 
 .cyan_2 {
   position: absolute;
   right: 0%;
-  top: 20%;
+    top: 10%;
 
   width: 14%;
   height: 30%;
 
   border-radius: 50%;
   background-color: var(--cyan);
+  
   filter: blur(8vw);
+  mix-blend-mode: normal;
 
   animation: cyan_2 10s infinite ease;
 }
 
+/*
 @keyframes cyan_2 {
   0%, 100% {
     right: 0%;
@@ -202,6 +221,7 @@ a {
       transform: rotate(-90deg);
   }
 }
+*/
 
 
 /**/
