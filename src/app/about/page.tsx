@@ -55,15 +55,25 @@ export default function About() {
                             С ними каждое поздравление наполняется волшебством!
                         </p>
                     </div>
+
+                    <div className={styles.section}>
+                        <h2 className="title-2">
+                            Реализация проекта
+                        </h2>
+                        <p className="text">
+                            Сервис разработан при поддержки <Link className={styles.link} href="https://www.sfu-kras.ru/">Сибирского федерального университета</Link>.
+                        </p>
+                    </div>
+
                     <div className={styles.section}>
                         <h2 className="title-2">
                             Разработчики
                         </h2>
                         <p className="text">
-                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="/ar-markers">Перфильев Данил</Link>.
+                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="/ar-markers">Перфильев Данил Владимирович</Link>.
                         </p>
                         <p className="text">
-                            3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван</Link>.
+                            3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван Владимирович</Link>.
                         </p>
                     </div>
                 </div>
