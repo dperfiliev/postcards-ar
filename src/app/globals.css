@@ -27,16 +27,16 @@
    --container: hsla(0, 0%, 0%, 0.2);
   */
 
-  --primary: hsl(0, 0%, 100%); 
-   --secondary: hsl(0, 0%, 2%); 
-   --neutral: hsl(0, 0%, 85%); 
- 
-   --cyan: hsl(180, 100%, 50%); 
-   --pink: hsl(280, 100%, 90%); 
-   --purple: hsl(270, 90%, 30%); 
-   --bg: hsl(280, 100%, 8%); 
- 
-   --container: hsla(0, 0%, 0%, 0.2);
+  --primary: #FFFFFF;
+--secondary: #050505;
+--neutral: #D9D9D9;
+
+--cyan: #e9ff24;
+--pink: #ffa7f8;
+--purple: #403679;
+--bg: #100016;
+
+--container: #00000033;
 }
 
 
@@ -96,7 +96,7 @@ a {
   border-radius: 50%;
   background-color: var(--pink);
 
-  filter: blur(10vw);
+  filter: blur(11vw);
 }
 
 .purple_1 {
@@ -110,12 +110,12 @@ a {
   border-radius: 50%;
   background-color: var(--purple);
 
-  filter: blur(10vw);
+  filter: blur(11vw);
 }
 
 .cyan_1 {
   position: absolute;
-  left: 5%;
+  left: 0%;
   bottom: 20%;
 
   width: 14%;
@@ -124,7 +124,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(10vw);
+  filter: blur(11vw);
 
   animation: cyan_1 10s infinite ease;
 }
@@ -162,7 +162,7 @@ a {
   border-radius: 50%;
   background-color: var(--pink);
 
-  filter: blur(10vw);
+  filter: blur(11vw);
 }
 
 .purple_2 {
@@ -176,12 +176,12 @@ a {
   border-radius: 50%;
   background-color: var(--purple);
 
-  filter: blur(10vw);
+  filter: blur(11vw);
 }
 
 .cyan_2 {
   position: absolute;
-  right: 5%;
+  right: 0%;
   top: 20%;
 
   width: 14%;
@@ -190,7 +190,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
   
-  filter: blur(10vw);
+  filter: blur(11vw);
 
   animation: cyan_2 10s infinite ease;
 }
@@ -392,27 +392,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 
   .purple_1 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 
   .cyan_1 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 
   .pink_2 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 
   .purple_2 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 
   .cyan_2 {
-    filter: blur(15vh);
+    filter: blur(14vh);
   }
 }
 
