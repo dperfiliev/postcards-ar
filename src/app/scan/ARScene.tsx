@@ -1,10 +1,14 @@
 "use client";
+import Script from "next/script";
 
+import Head from 'next/head';
 
 import { useEffect, useState, useRef } from "react";
 
-
 import { useRouter } from "next/navigation";
+
+//import * as THREE from "three"; // Импортируйте three.js
+
 
 interface ModelsData {
   [key: string]: {
@@ -40,9 +44,6 @@ const ARScene = () => {
       document.body.innerHTML = '';
     }
 
-    // Очистка содержимого <body>
-
-    // Перенаправление на главную страницу
     window.location.href = "/";
   };
 
@@ -52,34 +53,9 @@ const ARScene = () => {
     window.addEventListener("popstate", cleanUpARScene);
   }, []);
 
-  /*
-    const stopVideo = () => {
-      const videoElement = document.getElementById("arjs-video");
-      if (videoElement) {
-        videoElement.remove(); // Удаляем элемент видео из DOM
-      }
-      const body = document.body;
-      // Очищаем все inline-стили
-      const styles = body.style;
-      for (let i = styles.length - 1; i >= 0; i--) {
-        const styleName = styles[i];
-        body.style.removeProperty(styleName);
-      }
-    };
-
-
-    // Обработчик для кнопки "Назад"
-    const handleBackNavigation = () => {
-      stopVideo(); // Останавливаем видео
-      window.location.href = "/";  // Принудительное обновление маршрута
-    };
-
-    // Добавляем обработчик для кнопки "Назад"
-    window.addEventListener("popstate", handleBackNavigation);
-   */
 
   if (!models) {
-    return <div>Loading AR scene...</div>;
+    return <div>Загрузка сцены...</div>;
   }
 
   return (
@@ -89,6 +65,7 @@ const ARScene = () => {
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui, viewport-fit=cover"
       />
+
       <a-scene arjs="sourceType: webcam;"
         embedded
         renderer="logarithmicDepthBuffer: true;"
@@ -113,7 +90,9 @@ const ARScene = () => {
               gesture-handler="minScale: 0.5; maxScale: 2"
             ></a-entity>
 
+            
             <a-entity
+              
               particle-system={`
                 texture: ${particleTexture};
                 color: ${color};
@@ -127,8 +106,10 @@ const ARScene = () => {
                 particleCount: 100;
                 maxAge: 7;
               `}
+              
               position="0 0.1 0"
             ></a-entity>
+            
 
           </a-marker>
         ))}

@@ -79,8 +79,6 @@ a {
   height: 100%;
 
   background-color: var(--bg);
-  mix-blend-mode: normal;
-  filter: none; 
 
   overflow: hidden;
 }
@@ -99,7 +97,6 @@ a {
   background-color: var(--pink);
 
   filter: blur(10vw);
-  mix-blend-mode: normal;
 }
 
 .purple_1 {
@@ -114,7 +111,6 @@ a {
   background-color: var(--purple);
 
   filter: blur(10vw);
-  mix-blend-mode: normal;
 }
 
 .cyan_1 {
@@ -129,7 +125,6 @@ a {
   background-color: var(--cyan);
 
   filter: blur(8vw);
-  mix-blend-mode: normal;
 
   animation: cyan_1 10s infinite ease;
 }
@@ -168,7 +163,6 @@ a {
   background-color: var(--pink);
 
   filter: blur(10vw);
-  mix-blend-mode: normal;
 }
 
 .purple_2 {
@@ -183,7 +177,6 @@ a {
   background-color: var(--purple);
 
   filter: blur(10vw);
-  mix-blend-mode: normal;
 }
 
 .cyan_2 {
@@ -198,7 +191,6 @@ a {
   background-color: var(--cyan);
   
   filter: blur(8vw);
-  mix-blend-mode: normal;
 
   animation: cyan_2 10s infinite ease;
 }
@@ -222,7 +214,6 @@ a {
   }
 }
 */
-
 
 /**/
 
@@ -249,8 +240,6 @@ a {
   font-family: var(--font);
   color: var(--white);
   font-size: 30px;
-
-  /*font-weight: 700;*/
 }
 
 .text-logotype:hover {
@@ -403,29 +392,28 @@ a {
   }
 
   .pink_1 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .purple_1 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .cyan_1 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .pink_2 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .purple_2 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .cyan_2 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
-
 }
 
 @media (max-width: 567px) {
