@@ -13,6 +13,20 @@
 
   */
 
+  /*
+  
+--primary: #FFFFFF;
+  --secondary: #050505;
+  --neutral: #D9D9D9;
+
+  --cyan: #ffff00;
+  --pink: #ffa7f8;
+  --purple: #786eaf;
+  --bg: #100016;
+
+  --container: #00000033;
+
+  */
 
   /*
    --primary: hsl(0, 0%, 100%); 
@@ -31,9 +45,9 @@
   --secondary: #050505;
   --neutral: #D9D9D9;
 
-  --cyan: #ffff00;
+  --cyan: #00ffdd;
   --pink: #ffa7f8;
-  --purple: #786eaf;
+  --purple: #9189c0;
   --bg: #100016;
 
   --container: #00000033;
@@ -87,7 +101,7 @@ a {
 
 .pink_1 {
   position: absolute;
-  left: -20%;
+  left: -10%;
   bottom: -10%;
 
   width: 45%;
@@ -153,7 +167,7 @@ a {
 
 .pink_2 {
   position: absolute;
-  right: -20%;
+  right: -10%;
   top: -10%;
 
   width: 45%;

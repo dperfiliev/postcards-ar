@@ -15,7 +15,7 @@
     "model": "/models/tree/scene.glb",
     "patt": "/patterns/tree.patt",
     "particleTexture": "/images/particles/tree.png",
-    "color": "#008000, #008000" 
+    "color": "#FFFF00, #FFFF00" 
   },
   "marker4": {
     "model": "/models/heart/scene.glb",
