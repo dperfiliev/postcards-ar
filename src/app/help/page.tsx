@@ -7,17 +7,17 @@ import Footer from "../components/footer/footer"
 export default function Help() {
 
     const scans = [
-        { id: "1", imgSrc: "/images/helps/scan_1.jpg", num: "1", text: "В главном окне нажмите на кнопку сканирования открытки" },
-        { id: "2", imgSrc: "/images/helps/scan_2.jpg", num: "2", text: "В открывшемся окне дайте доступ к камере устройства" },
-        { id: "3", imgSrc: "/images/helps/scan_3.jpg", num: "3", text: "Наведите маркер на камеру" },
-        { id: "4", imgSrc: "/images/helps/scan_4.jpg", num: "4", text: "Воспользуйтесь функцией сделать скришот" },
+        { id: "1", imgSrc: "/images/helps/scan_1.jpg", num: "1", text: "В главном окне нажмите на кнопку сканирования" },
+        { id: "2", imgSrc: "/images/helps/scan_2.jpg", num: "2", text: "Разрешите доступ к камере устройства" },
+        { id: "3", imgSrc: "/images/helps/scan_3.jpg", num: "3", text: "Наведите камеру устройства на маркер" },
+        { id: "4", imgSrc: "/images/helps/scan_4.jpg", num: "4", text: "Взаимодействуйте с моделью касаниями" },
     ]
 
     const gets = [
-        { id: "1", imgSrc: "/images/helps/get_1.jpg", num: "1", text: "В главном окне нажмите на кнопку выбора открытки" },
-        { id: "2", imgSrc: "/images/helps/get_2.jpg", num: "2", text: "В открывшемся окне выберите подходящий вариант" },
-        { id: "3", imgSrc: "/images/helps/get_3.jpg", num: "3", text: "Вы можете скачать или сразу распечатать открытку" },
-        { id: "4", imgSrc: "/images/helps/get_4.jpg", num: "4", text: "Наклейте маркер, например, на открытку" },
+        { id: "1", imgSrc: "/images/helps/get_1.jpg", num: "1", text: "В главном окне нажмите на кнопку выбора" },
+        { id: "2", imgSrc: "/images/helps/get_2.jpg", num: "2", text: "Выберите подходящий вариант 3D-модели" },
+        { id: "3", imgSrc: "/images/helps/get_3.jpg", num: "3", text: "Скачайте маркер дополненной реальности" },
+        { id: "4", imgSrc: "/images/helps/get_4.jpg", num: "4", text: "Распечатайте и разместите на носителе" },
     ]
 
     return (
