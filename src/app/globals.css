@@ -171,7 +171,7 @@ a {
   top: -10%;
 
   width: 45%;
-  height: 70%;
+  height: 55%;
 
   border-radius: 50%;
   background-color: var(--pink);
@@ -184,8 +184,8 @@ a {
   right: -20%;
   top: 30%;
 
-  width: 40%;
-  height: 70%;
+  width: 30%;
+  height: 60%;
 
   border-radius: 50%;
   background-color: var(--purple);
