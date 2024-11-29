@@ -31,9 +31,9 @@
 --secondary: #050505;
 --neutral: #D9D9D9;
 
---cyan: #fff024;
+--cyan: #ffff00;
 --pink: #ffa7f8;
---purple: #403679;
+--purple: #594e96;
 --bg: #100016;
 
 --container: #00000033;
@@ -96,7 +96,7 @@ a {
   border-radius: 50%;
   background-color: var(--pink);
 
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 }
 
 .purple_1 {
@@ -110,7 +110,7 @@ a {
   border-radius: 50%;
   background-color: var(--purple);
 
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 }
 
 .cyan_1 {
@@ -124,7 +124,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 
   animation: cyan_1 10s infinite ease;
 }
@@ -162,7 +162,7 @@ a {
   border-radius: 50%;
   background-color: var(--pink);
 
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 }
 
 .purple_2 {
@@ -176,7 +176,7 @@ a {
   border-radius: 50%;
   background-color: var(--purple);
 
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 }
 
 .cyan_2 {
@@ -190,7 +190,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
   
-  filter: blur(calc(7vw + 9vh));
+  filter: blur(calc(6vw + 10vh));
 
   animation: cyan_2 10s infinite ease;
 }
