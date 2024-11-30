@@ -101,7 +101,7 @@ a {
 
 .pink_1 {
   position: absolute;
-  left: -10%;
+  left: -20%;
   bottom: -10%;
 
   width: 45%;
@@ -167,7 +167,7 @@ a {
 
 .pink_2 {
   position: absolute;
-  right: -10%;
+  right: -20%;
   top: -10%;
 
   width: 45%;
@@ -407,27 +407,27 @@ a {
   
   
 .pink_1 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   .purple_1 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   .cyan_1 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   .pink_2 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   .purple_2 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   .cyan_2 {
-    filter: blur(6rem);
+    filter: blur(10rem);
   }
 
   
