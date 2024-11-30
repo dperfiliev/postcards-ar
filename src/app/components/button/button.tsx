@@ -18,7 +18,7 @@ export default function Button({ isRound, isScalable, text, imgSrc, href, onClic
             href ? (
                 <Link href={href}>
                     <button className={styles.scalable}>
-                        {imgSrc && (<Image className={styles.icon_scalable} src={imgSrc} alt="" fill sizes="100px"/>)}
+                        {imgSrc && (<Image className={styles.icon_scalable} src={imgSrc} alt="" width={30} height={30} sizes="100px"/>)}
                         <span className={`text-button ${styles.text}`}>
                             {text}
                         </span>
