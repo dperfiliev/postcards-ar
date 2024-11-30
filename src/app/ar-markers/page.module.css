@@ -236,6 +236,10 @@
 }
 
 .download {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
     margin-left: auto;
     margin-top: 20px;
 }
@@ -276,6 +280,7 @@
 
     .download {
         margin-top: 10px;
+        gap: 10px;
     }
 }
 

@@ -58,6 +58,20 @@ export default function ArMarkers() {
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const handleShare = () => {
+        if (navigator.share) {
+            navigator.share({
+                title: selectedModelName,
+                text: selectedText,
+                url: selectedDownload,
+            })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        } else {
+            alert('Web Share API is not supported in your browser.');
+        }
+    };
+
     return (
         <div className="pagedesign">
             <div className="gradients">
@@ -144,10 +158,14 @@ export default function ArMarkers() {
                 </div>
 
                 {selectedDownload && (
-                    <a href={selectedDownload} download className={styles.download}>
+                   <div className={styles.download}>
+                    <Button text={"Подарить"} onClick={handleShare}/>
+                     <a href={selectedDownload} download>
                         <Button text="Скачать" />
                     </a>
+                   </div>
                 )}
+
             </div>
             <Footer />
         </div>
