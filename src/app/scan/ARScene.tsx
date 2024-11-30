@@ -83,6 +83,9 @@ const ARScene = () => {
             raycaster="objects: .clickable"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
+            detectionMode="color"
+            maxDetectionRate="30"
+            minConfidence="0.6"
           >
             <a-entity
               gltf-model={model}
