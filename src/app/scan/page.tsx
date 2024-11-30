@@ -6,15 +6,13 @@ import ARScene from "./ARScene"
 
 import Button from "../components/button/button"
 
-
-import html2canvas from "html2canvas"
-
-
 export default function Scan() {
 
 
     const goToMainPage = () => {
-      window.location.href = "/";  // Принудительное обновление страницы
+      if (typeof window !== "undefined") {
+        window.location.href = "/";
+      }
     };
 
     
@@ -27,7 +25,6 @@ export default function Scan() {
             
             <div className={styles.panel}>
                 <Button isRound={true} imgSrc="/images/icons/ui/close-black.png" onClick={goToMainPage}/>
-                {/**/}
             </div>
             
         </div>

@@ -44,7 +44,9 @@ const ARScene = () => {
       document.body.innerHTML = '';
     }
 
-    window.location.href = "/";
+    if (typeof window !== "undefined") {
+      window.location.href = "/";
+    }
   };
 
   useEffect(() => {
