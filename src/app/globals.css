@@ -52,7 +52,7 @@
   --neutral: #D9D9D9;
 
   --cyan: #00eeff;
-  --pink: #ff9ef2;
+  --pink: #ffb0f5;
   --purple: #4f4780;
   --bg: #0f0010;
 
@@ -144,7 +144,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(calc(6vw + 11vh));
+  filter: blur(calc(6vw + 12vh));
 
   animation: cyan_1 10s infinite ease;
 }
@@ -210,7 +210,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(calc(6vw + 11vh));
+  filter: blur(calc(6vw + 12vh));
 
   animation: cyan_2 10s infinite ease;
 }
@@ -371,30 +371,30 @@ a {
 @media (max-width: 768px) {
   .pink_1 {
     left: -10%;
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .purple_1 {
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .cyan_1 {
     bottom: 5%;
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .pink_2 {
     right: -10%;
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .purple_2 {
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .cyan_2 {
     top: 5%;
-    filter: blur(13vh);
+    filter: blur(14vh);
   }
 
   .text-logotype {
