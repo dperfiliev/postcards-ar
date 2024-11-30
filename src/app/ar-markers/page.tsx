@@ -64,11 +64,8 @@ export default function ArMarkers() {
                 title: selectedModelName,
                 text: selectedText,
                 url: selectedDownload,
-            })
-            .then(() => console.log('Successful share'))
-            .catch((error) => console.log('Error sharing', error));
-        } else {
-            alert('Web Share API is not supported in your browser.');
+            }).catch(() => {
+            });
         }
     };
 
