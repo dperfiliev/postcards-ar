@@ -156,7 +156,7 @@ export default function ArMarkers() {
 
                 {selectedDownload && (
                    <div className={styles.download}>
-                    <Button text={"Подарить"} onClick={handleShare}/>
+                    <Button isRound={true} imgSrc="/images/icons/ui/send.png" onClick={handleShare}/>
                      <a href={selectedDownload} download>
                         <Button text="Скачать" />
                     </a>
