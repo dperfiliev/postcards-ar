@@ -10,7 +10,7 @@ export default function Help() {
         { id: "1", imgSrc: "/images/helps/scan_1.png", num: "1", text: "В главном окне нажмите на кнопку сканирования" },
         { id: "2", imgSrc: "/images/helps/scan_2.png", num: "2", text: "Разрешите доступ к камере устройства" },
         { id: "3", imgSrc: "/images/helps/scan_3.png", num: "3", text: "Наведите камеру устройства на маркер" },
-        { id: "4", imgSrc: "/images/helps/scan_4.png", num: "4", text: "Взаимодействуйте с моделью касаниями" },
+        { id: "4", imgSrc: "/images/helps/scan_4.png", num: "4", text: "Касаниями взаимодействуйте с моделью" },
     ]
 
     const gets = [

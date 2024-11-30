@@ -71,6 +71,8 @@
 
 .description {
     text-align: center;
+   
+    overflow-wrap: break-word;
     width: 70%;
 }
 
@@ -93,8 +95,13 @@
     }
 }
 
-@media (max-width: 576px) {
-    
+@media (max-width: 900px){
+    .description {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
     .row {
         gap: 20px;
         align-items: center;
