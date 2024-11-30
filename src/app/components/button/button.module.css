@@ -15,7 +15,7 @@
     position: absolute;
     display: inline-block;
     border-radius: 30%;
-    object-fit: cover;
+    object-fit: contain;
     padding: 5px;
 }
 
@@ -84,6 +84,6 @@
         padding: 5px;
         display: inline-block;
         border-radius: 50%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
