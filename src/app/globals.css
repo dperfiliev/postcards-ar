@@ -45,10 +45,10 @@
   --secondary: rgb(5, 5, 5);
   --neutral: rgb(217, 217, 217);
 
-  --cyan: rgb(0, 225, 255);
-  --pink: rgb(250, 170, 230);
-  --purple: rgb(100, 95, 130);
-  --bg: rgb(15, 0, 20);
+  --cyan: rgb(0, 255, 190);
+  --pink: rgb(255, 160, 250);
+  --purple: rgb(70, 60, 100);
+  --bg: rgb(10, 0, 10);
 
   --container: rgba(0, 0, 0, 0.2);
 }
