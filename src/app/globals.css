@@ -51,9 +51,9 @@
   --secondary: #050505;
   --neutral: #D9D9D9;
 
-  --cyan: #FFCE47;
-  --pink: #EF3C66;
-  --purple: #492466;
+  --cyan: #00ffea;
+  --pink: #f6b8fc;
+  --purple: #59537e;
   --bg: #0f0010;
 
   --container: #00000033;
@@ -370,27 +370,27 @@ a {
 
 @media (max-width: 768px) {
   .pink_1 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
   .purple_1 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
   .cyan_1 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
   .pink_2 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
   .purple_2 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
   .cyan_2 {
-    filter: blur(calc(8vw + 8vh));
+    filter: blur(14vh);
   }
 
 
@@ -442,27 +442,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .purple_1 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .cyan_1 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .pink_2 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .purple_2 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .cyan_2 {
-    filter: blur(calc(6vw + 6vh));
+    filter: blur(10vh);
   }
 
   .content {
@@ -521,16 +521,36 @@ a {
 
 }
 
-/*
 
-@media (height < 700px) and (width < 400px) {
-  .content {
-    margin: 20px auto;
+
+@media (height < 500px) {
+  .pink_1 {
+    filter: blur(8vh);
+  }
+
+  .purple_1 {
+    filter: blur(8vh);
+  }
+
+  .cyan_1 {
+    filter: blur(8vh);
+  }
+
+  .pink_2 {
+    filter: blur(8vh);
+  }
+
+  .purple_2 {
+    filter: blur(8vh);
+  }
+
+  .cyan_2 {
+    filter: blur(8vh);
   }
 }
 
 
-*/
+
 
 /*
 
