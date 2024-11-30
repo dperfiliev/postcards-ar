@@ -38,7 +38,12 @@ export default function RootLayout({
     <html lang="ru">
       <head>
 
-
+      <meta
+        aframe-injected=""
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui, viewport-fit=cover"
+      />
+      
         <script src="/scripts/aframe.min.js" />
         <script src="/scripts/aframe-ar.js" />
         <script src="/scripts/aframe-particle-system-component.js" />
