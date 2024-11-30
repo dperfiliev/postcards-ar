@@ -51,9 +51,9 @@
   --secondary: #050505;
   --neutral: #D9D9D9;
 
-  --cyan: #00eeff;
-  --pink: #ff9ef2;
-  --purple: #6054aa;
+  --cyan: #00ffea;
+  --pink: #f6b8fc;
+  --purple: #59537e;
   --bg: #0f0010;
 
   --container: #00000033;
@@ -370,6 +370,7 @@ a {
 
 @media (max-width: 768px) {
   .pink_1 {
+    left: -10%;
     filter: blur(12vh);
   }
 
@@ -378,10 +379,12 @@ a {
   }
 
   .cyan_1 {
+    bottom: 10%;
     filter: blur(12vh);
   }
 
   .pink_2 {
+    right: -10%;
     filter: blur(12vh);
   }
 
@@ -390,6 +393,7 @@ a {
   }
 
   .cyan_2 {
+    top: 10%;
     filter: blur(12vh);
   }
 
@@ -506,14 +510,6 @@ a {
 
   .number {
     font-size: 28px;
-  }
-
-  .cyan_1 {
-    bottom: 10%;
-  }
-
-  .cyan_2 {
-    top: 10%;
   }
 
 }
