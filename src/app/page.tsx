@@ -38,7 +38,7 @@ export default async function Home() {
           </h2>
         </div>
         <div className={styles.scan}>
-          <ButtonScan src="./images/icons/ui/scan.svg" href='/scan'/>
+          <ButtonScan src="/images/icons/ui/scan.png" href='/scan'/>
 
 
           <p className='text-caption'>
@@ -49,7 +49,7 @@ export default async function Home() {
           </h3>
         </div>
         <div className={styles.ar}>
-          <ButtonAR src="./images/icons/ui/gift.svg" href='/ar-markers'/>
+          <ButtonAR src="/images/icons/ui/gift.png" href='/ar-markers'/>
           <p className='text-caption'>
             Нажмите, чтобы <br /> выбрать открытку
           </p>

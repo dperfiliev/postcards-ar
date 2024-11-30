@@ -13,7 +13,7 @@ export default function ButtonScan({ src, href }: ButtonScanT) {
         <Link href = {href}>
             <button className={styles.button}>
                 <div className={styles.light}></div>
-                <Image className={styles.img} src={src} alt="" fill sizes="40px" />
+                <Image className={styles.img} src={src} alt="" fill sizes="80px" />
             </button>
         </Link>
     )

@@ -10,8 +10,8 @@ export default function Header() {
                 <span className="text-logotype">ar-postcards</span>
             </Link>
             <div className={styles.nav}>
-                <Button isScalable={true} text="Помощь" imgSrc="/images/icons/ui/question.svg" href="/help" />
-                <Button isScalable={true} text="О Сервисе" imgSrc="/images/icons/ui/exclamation.svg" href="/about" />
+                <Button isScalable={true} text="Помощь" imgSrc="/images/icons/ui/question.png" href="/help" />
+                <Button isScalable={true} text="О Сервисе" imgSrc="/images/icons/ui/exclamation.png" href="/about" />
             </div>
         </div>
     )

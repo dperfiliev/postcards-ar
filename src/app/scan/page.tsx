@@ -26,7 +26,7 @@ export default function Scan() {
             <ARScene />
             
             <div className={styles.panel}>
-                <Button isRound={true} imgSrc="./images/icons/ui/close-black.svg" onClick={goToMainPage}/>
+                <Button isRound={true} imgSrc="/images/icons/ui/close-black.png" onClick={goToMainPage}/>
                 {/**/}
             </div>
             
