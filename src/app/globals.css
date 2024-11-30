@@ -53,7 +53,7 @@
 
   --cyan: #00ffea;
   --pink: #f6b8fc;
-  --purple: #59537e;
+  --purple: #3d3957;
   --bg: #0f0010;
 
   --container: #00000033;
@@ -144,7 +144,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(calc(5vw + 12vh));
+  filter: blur(calc(5vw + 10vh));
 
   animation: cyan_1 10s infinite ease;
 }
@@ -210,7 +210,7 @@ a {
   border-radius: 50%;
   background-color: var(--cyan);
 
-  filter: blur(calc(5vw + 12vh));
+  filter: blur(calc(5vw + 10vh));
 
   animation: cyan_2 10s infinite ease;
 }
@@ -370,27 +370,27 @@ a {
 
 @media (max-width: 768px) {
   .pink_1 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
   .purple_1 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
   .cyan_1 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
   .pink_2 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
   .purple_2 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
   .cyan_2 {
-    filter: blur(14vh);
+    filter: blur(12vh);
   }
 
 
@@ -525,27 +525,27 @@ a {
 
 @media (height < 500px) {
   .pink_1 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 
   .purple_1 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 
   .cyan_1 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 
   .pink_2 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 
   .purple_2 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 
   .cyan_2 {
-    filter: blur(8vh);
+    filter: blur(6vh);
   }
 }
 
