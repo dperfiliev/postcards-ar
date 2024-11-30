@@ -51,10 +51,12 @@
   --secondary: #050505;
   --neutral: #D9D9D9;
 
-  --cyan: #00eeff;
-  --pink: #ffb0f5;
-  --purple: #4f4780;
+  --cyan: #00ffea;
+  --pink: #fbd0ff;
+  --purple: #59537e;
   --bg: #0f0010;
+
+
 
   --container: #00000033;
 }
@@ -445,27 +447,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .purple_1 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .cyan_1 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .pink_2 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .purple_2 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .cyan_2 {
-    filter: blur(10vh);
+    filter: blur(11vh);
   }
 
   .content {
