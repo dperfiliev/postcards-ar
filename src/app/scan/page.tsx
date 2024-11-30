@@ -2,11 +2,13 @@
 
 import styles from "./page.module.css"
 
-import ARScene from "./ARScene"
-
 import Button from "../components/button/button"
 
 import { useRouter } from "next/navigation";
+
+import dynamic from 'next/dynamic';
+
+const ARScene = dynamic(() => import('./ARScene'), { ssr: false });
 
 export default function Scan() {
   const router = useRouter();
@@ -25,6 +27,6 @@ export default function Scan() {
       </div>
 
     </div>
-    
+
   )
 }
