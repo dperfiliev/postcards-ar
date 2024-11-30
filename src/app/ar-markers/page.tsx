@@ -143,6 +143,7 @@ export default function ArMarkers() {
                                                 src={item.icon}
                                                 alt=""
                                                 fill
+                                                sizes="40px"
                                             />
                                         </div>
                                         <h3 className="title-3">{item.name}</h3>
