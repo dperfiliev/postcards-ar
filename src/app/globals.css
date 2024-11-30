@@ -442,27 +442,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .purple_1 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .cyan_1 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .pink_2 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .purple_2 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .cyan_2 {
-    filter: blur(calc(6vw + 8vh));
+    filter: blur(calc(6vw + 6vh));
   }
 
   .content {
