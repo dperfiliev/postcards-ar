@@ -41,16 +41,16 @@
    --container: hsla(0, 0%, 0%, 0.2);
   */
 
-  --primary: #FFFFFF;
-  --secondary: #050505;
-  --neutral: #D9D9D9;
+  --primary: rgb(255, 255, 255);
+  --secondary: rgb(5, 5, 5);
+  --neutral: rgb(217, 217, 217);
 
-  --cyan: #00ffdd;
-  --pink: #ffa7f8;
-  --purple: #9189c0;
-  --bg: #100016;
+  --cyan: rgb(0, 225, 255);
+  --pink: rgb(250, 170, 230);
+  --purple: rgb(100, 95, 130);
+  --bg: rgb(15, 0, 20);
 
-  --container: #00000033;
+  --container: rgba(0, 0, 0, 0.2);
 }
 
 
