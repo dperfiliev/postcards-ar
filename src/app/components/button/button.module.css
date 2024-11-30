@@ -12,6 +12,7 @@
 }
 
 .icon {
+    position: absolute;
     border-radius: 30%;
     object-fit: contain;
     padding: 5px;
