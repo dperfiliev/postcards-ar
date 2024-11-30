@@ -393,7 +393,6 @@ a {
     filter: blur(12vh);
   }
 
-
   .text-logotype {
     font-size: 32px;
   }
@@ -442,27 +441,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .purple_1 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .cyan_1 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .pink_2 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .purple_2 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .cyan_2 {
-    filter: blur(10vh);
+    filter: blur(8vh);
   }
 
   .content {
@@ -509,8 +508,6 @@ a {
     font-size: 28px;
   }
 
-
-
   .cyan_1 {
     bottom: 10%;
   }
@@ -523,7 +520,9 @@ a {
 
 
 
-@media (height < 500px) {
+/*
+
+@media (height < 600px) {
   .pink_1 {
     filter: blur(60vh);
   }
@@ -549,6 +548,8 @@ a {
   }
 }
 
+
+*/
 
 
 
