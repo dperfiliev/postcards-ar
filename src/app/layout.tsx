@@ -21,7 +21,12 @@ const font = Leckerli_One({
 
 export const metadata: Metadata = {
   title: "Виртуальные открытки",
-  description: "Сервис маркеров дополненной реальности"
+  description: "Сервис маркеров дополненной реальности",
+  icons: {
+    icon: ["/images/icons/fav/favicon.ico?v=4"],
+    apple: ["/images/icons/fav/apple-touch-icon.png?v=4"],
+    shortcut: ["/images/icons/fav/apple-touch-icon.png"]
+  }
 };
 
 export default function RootLayout({
