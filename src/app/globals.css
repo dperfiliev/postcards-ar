@@ -52,7 +52,7 @@
   --neutral: #D9D9D9;
 
   --cyan: #00ffea;
-  --pink: #f6b8fc;
+  --pink: #fac5ff;
   --purple: #3d3957;
   --bg: #0f0010;
 
@@ -525,27 +525,27 @@ a {
 
 @media (height < 500px) {
   .pink_1 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 
   .purple_1 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 
   .cyan_1 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 
   .pink_2 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 
   .purple_2 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 
   .cyan_2 {
-    filter: blur(6vh);
+    filter: blur(60vh);
   }
 }
 
