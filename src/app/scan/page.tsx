@@ -2,20 +2,14 @@
 
 import styles from "./page.module.css"
 
+import ARScene from "./ARScene"
+
 import Button from "../components/button/button"
 
 import { useRouter } from "next/navigation";
 
-import dynamic from 'next/dynamic';
-
-const ARScene = dynamic(() => import('./ARScene'), { ssr: false });
-
 export default function Scan() {
-  const router = useRouter();
-
-  const goToMainPage = () => {
-    router.back();
-  };
+  
 
   return (
 
@@ -23,10 +17,10 @@ export default function Scan() {
       <ARScene />
 
       <div className={styles.panel}>
-        <Button isRound={true} imgSrc="/images/icons/ui/close-black.png" onClick={goToMainPage} />
+        <Button isRound={true} imgSrc="/images/icons/ui/close-black.png" />
       </div>
 
     </div>
-
+    
   )
 }
