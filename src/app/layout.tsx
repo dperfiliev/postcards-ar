@@ -33,6 +33,8 @@ export default function RootLayout({
     <html lang="ru">
       <head>
 
+
+
         <script src="/scripts/aframe.min.js" />
         <script src="/scripts/aframe-ar.js" />
         <script src="/scripts/aframe-particle-system-component.js" />
