@@ -17,6 +17,9 @@
     border-radius: 30%;
     object-fit: contain;
     padding: 5px;
+
+    width: 100%;
+  height: auto;
 }
 
 .button {
@@ -85,5 +88,8 @@
         display: inline-block;
         border-radius: 50%;
         object-fit: contain;
+
+        width: 100%;
+  height: auto;
     }
 }

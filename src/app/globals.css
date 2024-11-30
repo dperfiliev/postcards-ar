@@ -404,8 +404,17 @@ a {
     font-size: 28px;
   }
 
-  
-  
+}
+
+@media (max-width: 567px) {
+  .pagedesign {
+    padding: 10px;
+  }
+
+  .content {
+    margin: 40px auto;
+  }
+
   .pink_1 {
     filter: blur(6rem);
   }
@@ -428,19 +437,6 @@ a {
 
   .cyan_2 {
     filter: blur(5rem);
-  }
-
-  
-
-}
-
-@media (max-width: 567px) {
-  .pagedesign {
-    padding: 10px;
-  }
-
-  .content {
-    margin: 40px auto;
   }
 
   .text-logotype {
