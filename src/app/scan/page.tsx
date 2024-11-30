@@ -8,8 +8,14 @@ import Button from "../components/button/button"
 
 import { useRouter } from "next/navigation";
 
+import { useEffect } from "react";
+
 export default function Scan() {
   const router = useRouter();
+
+  useEffect(() => {
+    // Any code that accesses the window object should go here
+  }, []);
 
   const goToMainPage = () => {
     router.back();
