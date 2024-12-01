@@ -118,7 +118,7 @@ const ARScene = () => {
 
           </a-marker>
         ))}
-        <a-entity camera="fov: 50;"></a-entity>
+        <a-entity camera="fov: 75;"></a-entity>
       </a-scene>
     </>
   );

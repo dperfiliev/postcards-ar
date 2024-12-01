@@ -18,12 +18,6 @@ export default function Scan() {
   return (
     <div className={styles.scan}>
 
-      <meta
-        aframe-injected=""
-        name="viewport"
-        content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui, viewport-fit=cover"
-      />
-
       <ARScene />
 
       <div className={styles.panel}>
