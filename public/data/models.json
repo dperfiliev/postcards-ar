@@ -64,5 +64,11 @@
     "patt": "/patterns/star.patt",
     "particleTexture": "/images/particles/star.png",
     "color": "#FFFF00, #FFFF00"
+  },
+  "marker12": {
+    "model": "/models/squirrel_gift/scene.glb",
+    "patt": "/patterns/squirrel_gift.patt",
+    "particleTexture": "/images/particles/squirrel.png",
+    "color": "#FF0000, #FFFF00"
   }
 }
