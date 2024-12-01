@@ -51,7 +51,7 @@
   --secondary: #050505;
   --neutral: #D9D9D9;
 
-  --cyan: #fbff00;
+  --cyan: #ffbb00;
   --pink: #fbd0ff;
   --purple: #59537e;
   --bg: #0f0010;
@@ -375,30 +375,30 @@ a {
 @media (max-width: 768px) {
   .pink_1 {
     left: -10%;
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .purple_1 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .cyan_1 {
     bottom: 5%;
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .pink_2 {
     right: -10%;
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .purple_2 {
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .cyan_2 {
     top: 5%;
-    filter: blur(14vh);
+    filter: blur(15vh);
   }
 
   .text-logotype {
@@ -449,27 +449,27 @@ a {
   }
 
   .pink_1 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .purple_1 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .cyan_1 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .pink_2 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .purple_2 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .cyan_2 {
-    filter: blur(11vh);
+    filter: blur(12vh);
   }
 
   .content {
