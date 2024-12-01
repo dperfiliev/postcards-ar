@@ -26,7 +26,7 @@ export default function About() {
                             Наведением камеры устройства на AR–маркер, отображается 3D–модель, стилизованная под праздник.
                             Такой формат поздравления превращает подарок в настоящее чудо!
 
-                            Все что нужно сделать — это <Link className={styles.link} href="/ar-markers"> выбрать AR–маркер </Link>, распечатать его на бумаге, разместить на носителе, а затем подарить.
+                            Все что нужно сделать — это <Link className={styles.link} href="/ar-markers"> выбрать AR–маркер</Link>, распечатать его на бумаге, разместить на носителе, а затем подарить.
                             После получения подарка, его обладатель сможет <Link className={styles.link} href="/scan">отсканировать</Link> AR–маркер.
                         </p>
                     </div>
@@ -76,6 +76,19 @@ export default function About() {
                             3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван Владимирович</Link>.
                         </p>
                     </div>
+
+                    <div className={styles.section}>
+                        <h2 className="title-2">
+                            Beta
+                        </h2>
+                        <p className="text">
+                            Рекомендуем использовать Google Chrome / Яндекс Браузер.
+                        </p>
+                        <p className="text">
+                            Не поддерживается Samsung Internet Browser.
+                        </p>
+                    </div>
+
                 </div>
             </div>
             <Footer />
