@@ -45,7 +45,7 @@
     "model": "/models/nine/scene.glb",
     "patt": "/patterns/nine.patt",
     "particleTexture": "/images/particles/nine.png",
-    "color": "#000000, #FF0066"
+    "color": "#FFFF00, #FFFF00"
   },
   "marker9": {
     "model": "/models/rose/scene.glb",
