@@ -24,7 +24,7 @@ function ModelViewer({ modelPath }: { modelPath: string }) {
         }
     });
 
-    return <primitive ref={meshRef} object={gltf.scene} position={[0, -0.9, 0]} />;
+    return <primitive ref={meshRef} object={gltf.scene} position={[0, -0.9, 0]} castShadow receiveShadow/>;
 }
 
 export default function Model({ url }: { url: string }) {
@@ -33,7 +33,21 @@ export default function Model({ url }: { url: string }) {
 
     return (
         <Canvas style={{ width: '100%', height: '100%', borderRadius: "20px" }} camera={{ position: [1.5, 0.5, 1], fov: 75 }}>
-            <ambientLight intensity={2.5} />
+            <ambientLight intensity={1} />
+
+            <directionalLight
+                castShadow
+                position={[2.5, 8, 5]}
+                intensity={2.5}
+                shadow-mapSize-width={1024}
+                shadow-mapSize-height={1024}
+                shadow-camera-far={50}
+                shadow-camera-left={-10}
+                shadow-camera-right={10}
+                shadow-camera-top={10}
+                shadow-camera-bottom={-10}
+            />
+
             <pointLight position={[0, 1.5, 0]} />
 
             <Suspense fallback={<Loader />}>
