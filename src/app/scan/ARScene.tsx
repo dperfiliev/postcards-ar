@@ -21,6 +21,7 @@ interface ModelsData {
 
 const ARScene = () => {
   const [models, setModels] = useState<ModelsData | null>(null);
+  const [cameraConfigured, setCameraConfigured] = useState(false);
 
   const router = useRouter();
 
@@ -31,6 +32,37 @@ const ARScene = () => {
       setModels(data);
     } catch (error) {
       console.error("Error loading models:", error);
+    }
+  };
+
+  const configureCamera = async () => {
+    try {
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const videoDevices = devices.filter((device) => device.kind === "videoinput");
+
+      // Ищем заднюю камеру
+      const backCamera = videoDevices.find((device) =>
+        device.label.toLowerCase().includes("back")
+      );
+
+      if (backCamera) {
+        const constraints = {
+          video: {
+            deviceId: { exact: backCamera.deviceId },
+            facingMode: "environment",
+          },
+        };
+
+        const stream = await navigator.mediaDevices.getUserMedia(constraints);
+        const videoElement = document.getElementById("arjs-video") as HTMLVideoElement;
+
+        if (videoElement) {
+          videoElement.srcObject = stream;
+        }
+      }
+      setCameraConfigured(true);
+    } catch (error) {
+      console.error("Error configuring camera:", error);
     }
   };
 
@@ -52,11 +84,13 @@ const ARScene = () => {
   useEffect(() => {
     loadModels()
 
+    configureCamera();
+
     window.addEventListener("popstate", cleanUpARScene);
   }, []);
 
 
-  if (!models) {
+  if (!models || !cameraConfigured) {
     return <div>Загрузка сцены...</div>;
   }
 
