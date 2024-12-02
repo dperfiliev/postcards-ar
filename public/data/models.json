@@ -67,7 +67,7 @@
     "patt": "/patterns/squirrel.patt",
     "particleTexture": "/images/particles/squirrel.png",
     "color": "#D96514, #D96514",
-    "pos": "0 0.4 0"
+    "pos": "0 0.5 0.1"
   },
   "marker11": {
     "model": "/models/star/scene.glb",
@@ -79,8 +79,8 @@
   "marker12": {
     "model": "/models/squirrel_gift/scene.glb",
     "patt": "/patterns/squirrel_gift.patt",
-    "particleTexture": "/images/particles/squirrel.png",
-    "color": "#D96514, #D96514",
+    "particleTexture": "/images/particles/squirrel_gift.png",
+    "color": "#FFFF00, #FFFF00",
     "pos": "0 0.1 0.5"
   }
 }
