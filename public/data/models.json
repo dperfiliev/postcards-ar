@@ -81,6 +81,6 @@
     "patt": "/patterns/squirrel_gift.patt",
     "particleTexture": "/images/particles/squirrel_gift.png",
     "color": "#FFFF00, #FFFF00",
-    "pos": "0 1 0"
+    "pos": "0 0.7 0"
   }
 }
