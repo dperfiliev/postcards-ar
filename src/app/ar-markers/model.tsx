@@ -38,7 +38,7 @@ export default function Model({ url }: { url: string }) {
             <directionalLight
                 castShadow
                 position={[2.5, 8, 5]}
-                intensity={2}
+                intensity={2.5}
                 shadow-mapSize-width={1024}
                 shadow-mapSize-height={1024}
                 shadow-camera-far={50}
