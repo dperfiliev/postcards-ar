@@ -24,7 +24,7 @@
     "model": "/models/heart/scene.glb",
     "patt": "/patterns/heart.patt",
     "particleTexture": "/images/particles/heart.png",
-    "color": "#FF0000, #FF8ECC",
+    "color": "#FF0000, #FF0000",
     "pos": "0 0 0"
   },
   "marker5": {
@@ -60,7 +60,7 @@
     "patt": "/patterns/rose.patt",
     "particleTexture": "/images/particles/rose.png",
     "color": "#FF0000, #FF0000",
-    "pos": "0 0.7 0"
+    "pos": "0 0.1 0"
   },
   "marker10": {
     "model": "/models/squirrel/scene.glb",
