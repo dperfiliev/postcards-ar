@@ -21,7 +21,7 @@
     "model": "/models/heart/scene.glb",
     "patt": "/patterns/heart.patt",
     "particleTexture": "/images/particles/heart.png",
-    "color": "#FF0000, #FFFFFF"
+    "color": "#FF0000, #FF0000"
   },
   "marker5": {
     "model": "/models/bell/scene.glb",
