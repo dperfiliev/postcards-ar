@@ -85,7 +85,7 @@ const ARScene = () => {
             cursor="fuse: false; rayOrigin: mouse;"
             detectionMode="color"
             maxDetectionRate="30"
-            minConfidence="0.6"
+            minConfidence="0.7"
           >
             <a-entity
               gltf-model={model}
