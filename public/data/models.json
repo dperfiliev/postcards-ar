@@ -3,72 +3,84 @@
     "model": "/models/rocket/scene.glb",
     "patt": "/patterns/rocket.patt",
     "particleTexture": "/images/particles/rocket.png",
-    "color": "#FF0000, #FF0000"
+    "color": "#FF0000, #FF0000",
+    "pos": "0 0.1 0"
   },
   "marker2": {
     "model": "/models/snowman/scene.glb",
     "patt": "/patterns/snowman.patt",
     "particleTexture": "/images/particles/snowman.png",
-    "color": "#FFFFFF, #FFFFFF"
+    "color": "#FFFFFF, #FFFFFF",
+    "pos": "0 0.1 0"
   },
   "marker3": {
     "model": "/models/tree/scene.glb",
     "patt": "/patterns/tree.patt",
     "particleTexture": "/images/particles/tree.png",
-    "color": "#FFFF00, #FFFF00" 
+    "color": "#FFFF00, #FFFF00",
+    "pos": "0 0.1 0"
   },
   "marker4": {
     "model": "/models/heart/scene.glb",
     "patt": "/patterns/heart.patt",
     "particleTexture": "/images/particles/heart.png",
-    "color": "#FF0000, #FF0000"
+    "color": "#FF0000, #FF8ECC",
+    "pos": "0 0 0"
   },
   "marker5": {
     "model": "/models/bell/scene.glb",
     "patt": "/patterns/bell.patt",
     "particleTexture": "/images/particles/bell.png",
-    "color": "#FFC300, #FFFF00"
+    "color": "#FFC300, #FFFF00",
+    "pos": "0 0.1 0"
   },
   "marker6": {
     "model": "/models/cake/scene.glb",
     "patt": "/patterns/cake.patt",
     "particleTexture": "/images/particles/cake.png",
-    "color": "#FF508A, #FFFFFF"
+    "color": "#FF508A, #FFFFFF",
+    "pos": "0 0.1 0"
   },
   "marker7": {
     "model": "/models/gift/scene.glb",
     "patt": "/patterns/gift.patt",
     "particleTexture": "/images/particles/gift.png",
-    "color": "#FFFF00, #FFFF00"
+    "color": "#FFFF00, #FFFF00",
+    "pos": "0 0.1 0"
   },
   "marker8": {
     "model": "/models/nine/scene.glb",
     "patt": "/patterns/nine.patt",
     "particleTexture": "/images/particles/nine.png",
-    "color": "#FFFF00, #FFFF00"
+    "color": "#FFFF00, #FFFF00",
+    "pos": "0 0.4 0"
   },
   "marker9": {
     "model": "/models/rose/scene.glb",
     "patt": "/patterns/rose.patt",
     "particleTexture": "/images/particles/rose.png",
-    "color": "#FF0000, #FF0000"
+    "color": "#FF0000, #FF0000",
+    "pos": "0 0.7 0"
   },
   "marker10": {
     "model": "/models/squirrel/scene.glb",
     "patt": "/patterns/squirrel.patt",
     "particleTexture": "/images/particles/squirrel.png",
-    "color": "#FF0000, #FFFF00"
+    "color": "#D96514, #D96514",
+    "pos": "0 0.4 0"
   },
   "marker11": {
     "model": "/models/star/scene.glb",
     "patt": "/patterns/star.patt",
     "particleTexture": "/images/particles/star.png",
-    "color": "#FFFF00, #FFFF00"
+    "color": "#FFFF00, #FFFF00",
+    "pos": "0 0.5 0"
   },
   "marker12": {
     "model": "/models/squirrel_gift/scene.glb",
     "patt": "/patterns/squirrel_gift.patt",
     "particleTexture": "/images/particles/squirrel.png",
-    "color": "#FF0000, #FFFF00"
+    "color": "#D96514, #D96514",
+    "pos": "0 0.1 0.5"
   }
 }

@@ -16,6 +16,7 @@ interface ModelsData {
     patt: string;
     particleTexture: string;
     color: string;
+    pos: string;
   };
 }
 
@@ -78,14 +79,14 @@ const ARScene = () => {
         device-orientation-permission-ui=""
         gesture-detector
       >
-        {Object.entries(models).map(([key, { model, patt, particleTexture, color }]) => (
+        {Object.entries(models).map(([key, { model, patt, particleTexture, color, pos }]) => (
           <a-marker key={key} preset="custom" type="pattern" url={patt}
             raycaster="objects: .clickable"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
             detectionMode="color"
             maxDetectionRate="30"
-            minConfidence="0.7"
+            minConfidence="0.6"
           >
             <a-entity
               gltf-model={model}
@@ -112,7 +113,7 @@ const ARScene = () => {
                 maxAge: 7;
               `}
               
-              position="0 0.1 0"
+              position={pos}
             ></a-entity>
             
 
