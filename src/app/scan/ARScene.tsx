@@ -102,7 +102,7 @@ const ARScene = () => {
               particle-system={`
                 texture: ${particleTexture};
                 color: ${color};
-                size: 2, 0;
+                size: 2.5, 0;
                 velocityValue: 0.001 0.001 0.001;
                 velocitySpread: 0.5 0 0.5;
                 accelerationValue: 0.001 0.001 0.001;
