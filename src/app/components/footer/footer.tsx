@@ -12,9 +12,6 @@ export default function Footer() {
             </p>
             <div className={styles.socials}>
                 {/* <Button isRound={true} imgSrc="/images/icons/ui/vk.svg" href="https://vk.com/"/> */}
-                <Link className={styles.wrapper} href="https://www.sfu-kras.ru/">
-                    <Image className={styles.sibfu} src="/images/icons/ui/sibfu.png" alt="" fill sizes="40px"/>
-                </Link>
                 <Button isRound={true} imgSrc="/images/icons/ui/tg.png" href="https://web.telegram.org/"/>
             </div>
         </div>
