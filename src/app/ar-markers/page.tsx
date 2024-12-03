@@ -27,11 +27,10 @@ export default function ArMarkers() {
         { id: "5", name: "День знаний", icon: "/images/icons/list/bell.png", marker: "/images/markers/bell.jpg", download: "/images/downloads/bell.png", model: "./models/bell/scene.glb", modelName: "Колокольчик", description: "Колокольчик с золотистым корпусом и яркой красной лентой, аккуратно завязанной вокруг ручки, символизирует начало учебного года."},
         { id: "6", name: "День рождения (Торт)", icon: "/images/icons/list/cake.png", marker: "/images/markers/cake.jpg", download: "/images/downloads/cake.png", model: "./models/cake/scene.glb", modelName: "Помадковый торт", description: "Праздничный торт с розовым кремом, украшенный свечами и ягодами, создаёт атмосферу праздника и радости."},
         { id: "7", name: "День рождения (Подарок)", icon: "/images/icons/list/gift.png", marker: "/images/markers/gift.jpg", download: "/images/downloads/gift.png", model: "./models/gift/scene.glb", modelName: "Подарок с бантом", description: "Подарок, упакованный в яркую обёрточную бумагу и украшенный большим бантом, создаёт праздничное настроение."},
-        { id: "8", name: "День святого Валентина", icon: "/images/icons/list/heart.png", marker: "/images/markers/heart.jpg", download: "/images/downloads/heart.png", model: "./models/heart/scene.glb", modelName: "Сердце", description: "Модель красного сердца с гладкой текстурой и насыщенным цветом, создаёт атмосферу любви и нежности."},
-        { id: "9", name: "День основания СФУ", icon: "/images/icons/list/squirrel.png", marker: "/images/markers/squirrel.jpg", download: "/images/downloads/squirrel.png", model: "./models/squirrel/scene.glb", modelName: "Белочка", description: "Модель белочки с пушистым хвостом передаёт атмосферу лесной сказки и приносит чувство восторга." },
-        { id: "10", name: "День космонавтики", icon: "/images/icons/list/rocket.png", marker: "/images/markers/rocket.jpg", download: "/images/downloads/rocket.png", model: "./models/rocket/scene.glb", modelName: "Космическая ракета", description: "Стремление к звёздам и открытиям! Модель с футуристичным дизайном вдохновляет на мечты о космических полётах." },
-        { id: "11", name: "День защитника отечества", icon: "/images/icons/list/star.png", marker: "/images/markers/star.jpg", download: "/images/downloads/star.png", model: "./models/star/scene.glb", modelName: "Звезда", description: "Модель красной звезды символизирует мужество и героизм, выражая уважение и благодарность защитникам Отечества." },
-        { id: "12", name: "День Победы", icon: "/images/icons/list/nine.png", marker: "/images/markers/nine.jpg", download: "/images/downloads/nine.png", model: "./models/nine/scene.glb", modelName: "Георгиевская лента", description: "Символ героизма, военной доблести и славы защитников." },
+        { id: "8", name: "День основания СФУ", icon: "/images/icons/list/squirrel.png", marker: "/images/markers/squirrel.jpg", download: "/images/downloads/squirrel.png", model: "./models/squirrel/scene.glb", modelName: "Белочка", description: "Модель белочки с пушистым хвостом передаёт атмосферу лесной сказки и приносит чувство восторга." },
+        { id: "9", name: "День космонавтики", icon: "/images/icons/list/rocket.png", marker: "/images/markers/rocket.jpg", download: "/images/downloads/rocket.png", model: "./models/rocket/scene.glb", modelName: "Космическая ракета", description: "Стремление к звёздам и открытиям! Модель с футуристичным дизайном вдохновляет на мечты о космических полётах." },
+        { id: "10", name: "День защитника отечества", icon: "/images/icons/list/star.png", marker: "/images/markers/star.jpg", download: "/images/downloads/star.png", model: "./models/star/scene.glb", modelName: "Звезда", description: "Модель красной звезды символизирует мужество и героизм, выражая уважение и благодарность защитникам Отечества." },
+        { id: "11", name: "День Победы", icon: "/images/icons/list/nine.png", marker: "/images/markers/nine.jpg", download: "/images/downloads/nine.png", model: "./models/nine/scene.glb", modelName: "Георгиевская лента", description: "Символ героизма, военной доблести и славы защитников." },
         
     ];
 
@@ -143,7 +142,7 @@ export default function ArMarkers() {
                             </div>
                         </div>
 
-                    </div>
+                    </div>  
                 </div>
 
                 {selectedDownload && (
