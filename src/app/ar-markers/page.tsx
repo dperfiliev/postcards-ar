@@ -60,17 +60,6 @@ export default function ArMarkers() {
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    const handleShare = () => {
-        if (navigator.share) {
-            navigator.share({
-                title: selectedModelName,
-                text: selectedText,
-                url: selectedDownload,
-            }).catch(() => {
-            });
-        }
-    };
-
     return (
         <div className="pagedesign">
             <div className="gradients">
@@ -159,7 +148,6 @@ export default function ArMarkers() {
 
                 {selectedDownload && (
                    <div className={styles.download}>
-                    <Button text="Отправить" onClick={handleShare}/>
                      <a href={selectedDownload} download>
                         <Button text="Скачать" />
                     </a>
