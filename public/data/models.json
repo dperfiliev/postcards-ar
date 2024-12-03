@@ -21,62 +21,55 @@
     "pos": "0 0.1 0"
   },
   "marker4": {
-    "model": "/models/heart/scene.glb",
-    "patt": "/patterns/heart.patt",
-    "particleTexture": "/images/particles/heart.png",
-    "color": "#FF0000, #FF0000",
-    "pos": "0 0 0"
-  },
-  "marker5": {
     "model": "/models/bell/scene.glb",
     "patt": "/patterns/bell.patt",
     "particleTexture": "/images/particles/bell.png",
     "color": "#FFC300, #FFFF00",
     "pos": "0 0.1 0"
   },
-  "marker6": {
+  "marker5": {
     "model": "/models/cake/scene.glb",
     "patt": "/patterns/cake.patt",
     "particleTexture": "/images/particles/cake.png",
     "color": "#FF508A, #FFFFFF",
     "pos": "0 0.1 0"
   },
-  "marker7": {
+  "marker6": {
     "model": "/models/gift/scene.glb",
     "patt": "/patterns/gift.patt",
     "particleTexture": "/images/particles/gift.png",
     "color": "#FFFF00, #FFFF00",
     "pos": "0 0.1 0"
   },
-  "marker8": {
+  "marker7": {
     "model": "/models/nine/scene.glb",
     "patt": "/patterns/nine.patt",
     "particleTexture": "/images/particles/nine.png",
     "color": "#FFFF00, #FFFF00",
     "pos": "0 0.4 0"
   },
-  "marker9": {
+  "marker8": {
     "model": "/models/rose/scene.glb",
     "patt": "/patterns/rose.patt",
     "particleTexture": "/images/particles/rose.png",
     "color": "#FF0000, #FF0000",
     "pos": "0 0.1 0"
   },
-  "marker10": {
+  "marker9": {
     "model": "/models/squirrel/scene.glb",
     "patt": "/patterns/squirrel.patt",
     "particleTexture": "/images/particles/squirrel.png",
     "color": "#D96514, #D96514",
     "pos": "0 0.5 0"
   },
-  "marker11": {
+  "marker10": {
     "model": "/models/star/scene.glb",
     "patt": "/patterns/star.patt",
     "particleTexture": "/images/particles/star.png",
     "color": "#FFFF00, #FFFF00",
     "pos": "0 0.5 0"
   },
-  "marker12": {
+  "marker11": {
     "model": "/models/squirrel_gift/scene.glb",
     "patt": "/patterns/squirrel_gift.patt",
     "particleTexture": "/images/particles/squirrel_gift.png",
