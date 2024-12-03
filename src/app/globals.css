@@ -264,6 +264,7 @@ a {
   font-family: var(--font);
   color: var(--white);
   font-size: 30px;
+  line-height: 10px;
 }
 
 .text-logotype:hover {
@@ -331,7 +332,7 @@ a {
   }
 
   .text-logotype {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .title-0 {
