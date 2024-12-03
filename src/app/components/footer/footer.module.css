@@ -11,30 +11,8 @@
     gap: 20px;
 }
 
-.wrapper {
-    position: relative;
-    border-radius: 50%;
-    border: none;
-    
-    width: 40px;
-    height: 40px;
-}
-
-.sibfu {
-    border-radius: 50%;
-    border: none;
-    object-fit: contain;
-}
-
 @media (max-width: 1400px) {
     .socials{
         gap: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .wrapper {
-        width: 30px;
-        height: 30px;
     }
 }

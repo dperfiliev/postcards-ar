@@ -11,6 +11,10 @@
     gap: 20px;
 }
 
+.logos {
+    position: relative;
+}
+
 @media (max-width: 1400px) {
     .nav {
         gap: 10px;
