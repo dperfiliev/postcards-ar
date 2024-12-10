@@ -18,28 +18,28 @@
     "patt": "/patterns/tree.patt",
     "particleTexture": "/images/particles/tree.png",
     "color": "#FFFF00, #FFFF00",
-    "pos": "0 0.1 0"
+    "pos": "0 0.2 0"
   },
   "marker4": {
     "model": "/models/bell/scene.glb",
     "patt": "/patterns/bell.patt",
     "particleTexture": "/images/particles/bell.png",
     "color": "#FFC300, #FFFF00",
-    "pos": "0 0.1 0"
+    "pos": "0 0.2 0"
   },
   "marker5": {
     "model": "/models/cake/scene.glb",
     "patt": "/patterns/cake.patt",
     "particleTexture": "/images/particles/cake.png",
     "color": "#FF508A, #FFFFFF",
-    "pos": "0 0.1 0"
+    "pos": "0 0.2 0"
   },
   "marker6": {
     "model": "/models/gift/scene.glb",
     "patt": "/patterns/gift.patt",
     "particleTexture": "/images/particles/gift.png",
     "color": "#FFFF00, #FFFF00",
-    "pos": "0 0.1 0"
+    "pos": "0 0.2 0"
   },
   "marker7": {
     "model": "/models/nine/scene.glb",
