@@ -1,13 +1,8 @@
 "use client";
-import Script from "next/script";
 
-import Head from 'next/head';
-
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState} from "react";
 
 import { useRouter } from "next/navigation";
-
-//import * as THREE from "three"; // Импортируйте three.js
 
 
 interface ModelsData {

@@ -4,9 +4,6 @@ import "./globals.css";
 import { Montserrat } from "next/font/google"
 import { Leckerli_One } from "next/font/google"
 
-import Head from "next/head";
-import Script from "next/script";
-
 const montserrat = Montserrat({
   weight: ['100', '300', '500', '700'],
   subsets: ['cyrillic'],

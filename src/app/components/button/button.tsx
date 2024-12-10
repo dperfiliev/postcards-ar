@@ -53,51 +53,5 @@ export default function Button({ isRound, isScalable, text, imgSrc, href, onClic
             )
         )
 
-
-       /*
-         isRound && href ? (
-        <Link href={href}>
-            <button className={styles.button_round}>
-                {imgSrc && (<Image className={styles.icon} src={imgSrc} alt="" fill />)}
-            </button>
-        </Link>
-    ) :
-
-
-
-        (
-            isScalable && href ? (
-                <Link href={href}>
-                    <button className={styles.scalable}>
-                        {imgSrc && (<Image className={styles.icon_scalable} src={imgSrc} alt="" fill />)}
-                        <span className={`text-button ${styles.text}`}>
-                            {text}
-                        </span>
-                    </button>
-                </Link>
-            ) : (
-                href ? (
-                    <Link href={href}>
-                        <button className={styles.button}>
-                            <span className="text-button">
-                                {text}
-                            </span>
-                        </button>
-                    </Link>
-                )
-                    :
-                    imgSrc && isRound ? (
-                        <button className={styles.button_round}>
-                            <Image className={styles.icon} src={imgSrc} alt="" fill />
-                        </button>
-                    ) : (<button className={styles.button} onClick={onClick}>
-                        <span className="text-button">
-                            {text}
-                        </span>
-                    </button>)
-            )
-        )
-        */
-
     )
 }

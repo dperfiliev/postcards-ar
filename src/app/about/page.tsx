@@ -95,12 +95,3 @@ export default function About() {
         </div>
     )
 }
-
-/*
-            <div className={styles.section}>
-
-            </div>
-            <div className={styles.section}>
-
-            </div>
-*/

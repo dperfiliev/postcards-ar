@@ -7,7 +7,7 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Model from "./model";
 import Button from "../components/button/button";
-import Link from "next/link";
+
 
 function Loader() {
     return <div className={styles.loader}></div>;
