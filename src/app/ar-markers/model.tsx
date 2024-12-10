@@ -56,8 +56,8 @@ export default function Model({ url }: { url: string }) {
 
             <OrbitControls
                 enablePan={false}
-                minDistance={2}
-                maxDistance={5}
+                minDistance={3}
+                maxDistance={6}
             />
         </Canvas>
     );
