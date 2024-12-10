@@ -70,10 +70,10 @@ export default function About() {
                             Разработчики
                         </h2>
                         <p className="text">
-                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="/ar-markers">Перфильев Данил Владимирович</Link>.
+                            Веб-дизайнер / Веб-разработчик: <Link className={styles.link} href="https://t.me/perfilev_danil">Перфильев Данил Владимирович</Link>.
                         </p>
                         <p className="text">
-                            3D-художник: <Link className={styles.link} href="/ar-markers">Спиридонов Иван Владимирович</Link>.
+                            3D-художник: <Link className={styles.link} href="https://t.me/eto_aivan">Спиридонов Иван Владимирович</Link>.
                         </p>
                     </div>
 

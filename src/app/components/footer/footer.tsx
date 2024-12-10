@@ -12,7 +12,7 @@ export default function Footer() {
             </p>
             <div className={styles.socials}>
                 {/* <Button isRound={true} imgSrc="/images/icons/ui/vk.svg" href="https://vk.com/"/> */}
-                <Button isRound={true} imgSrc="/images/icons/ui/tg.png" href="https://web.telegram.org/"/>
+                <Button isRound={true} imgSrc="/images/icons/ui/tg.png" href="https://t.me/perfilev_danil"/>
             </div>
         </div>
     )
