@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  ar-postcards:
+    container_name: ar-postcards
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ar_next_cache:/app/.next/cache
+    ports:
+      - 3000:3000
+    networks:
+      - ar-postcards
+      
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  ar-postcards:
+    name: ar-postcards
+    external: true
+
+volumes:
+  ar_next_cache:
+    external: true
