@@ -8,7 +8,7 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.logos}>
                 <Link className={styles.wrapper} href="https://www.sfu-kras.ru/">
-                    <Image className={styles.sibfu} src="/images/icons/ui/sibfu.png" alt="" fill sizes="50px" />
+                    <Image className={styles.sibfu} src="/images/icons/ui/sibfu.png" alt="" fill sizes="50px" priority={true}/>
                 </Link>
                 <Link href="/">
                     <span className="text-logotype">ar-postcards</span>

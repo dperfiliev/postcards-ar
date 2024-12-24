@@ -12,7 +12,7 @@ export default function ButtonAR({ src, href }: ButtonART) {
     return (
         <Link href={href}>
             <button className={styles.button}>
-                <Image className={styles.img} src={src} alt="" fill sizes="60px"/>
+                <Image className={styles.img} src={src} alt="" fill sizes="60px" priority={true}/>
             </button>
         </Link>
     )
